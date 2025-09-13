@@ -1,0 +1,618 @@
+{
+  "rules": [
+    {
+      "id": "r_6_15_4",
+      "number": "6.15.4",
+      "title": "בדיקת מערכת גילוי האש והעשן",
+      "category": "כבאות",
+      "text": "בדיקת מערכת גילוי האש והעשן תיעשה על-פי תקן ישראלי ת\"י 1220, חלק11, מערכות וסח נספח ג' לתקן הנ\"ל, יוגש גילוי אש: תחזוקה. העתק מתעודת הבדיקה, שתיערך לפי נ לנותן האישור.",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_16",
+      "number": "6.16",
+      "title": "מערכת חשמל",
+      "category": "כבאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_16_1",
+      "number": "6.16.1",
+      "title": "דרישות בלוחות חשמל בעסק",
+      "category": "כבאות",
+      "text": "בלוחות חשמל הממוקמים בעסק תותקנה המערכות הבאות",
+      "bullets": [
+        { "idx": 1, "text": "לוח חשמל בעל זרם של63 אמפר - ככל שנדרש להתקין בעסק מערכת גילוי אש ועשן, יותקן גלאי עשן בלוח החשמל." },
+        { "idx": 2, "text": "לוח חשמל בעל זרם של80 אמפר - מערכת גילוי אש ועשן, ככל שנדרש להתקין בעסק יותקנו גלאי עשן בלוח החשמל ומערכת ניתוק לוח חשמל ממקור ההזנה." },
+        { "idx": 3, "text": "לוח חשמל בעל זרם של100 אמפר ומעלה - תותקן מערכת גילוי אש או עשן הכוללת גלאים, מערכת כיבוי אוטומטית יבשה ומערכת ניתוק לוח חשמל ממקור ההזנה." },
+        { "idx": 4, "text": "על אף האמור בסעיף 6.16.1).3(, אין חובה להתקין מערכת כיבוי אוטומטית בלוח חשמל בעל זרם של 100 אמפר ומעלה, המקיים את כל הדרישות הבאות (א) עומד בתקן ישראלי ת\"י 1419. (ב מותקן בו גלאי עשן. (ג) מותקנת בו מערכת ניתוק לוח חשמל ממקור הזנה. (ד) נמצא באזור כיסוי של מערכת כיבוי אוטומטית." }
+      ],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_16_2",
+      "number": "6.16.2",
+      "title": "התקנת מערכת גילוי אש/עשן בלוח החשמל לפי תקן",
+      "category": "כבאות",
+      "text": "מערכת גילוי האש ו/או העשן המתוקנת בלוח החשמל תותקן על-י ת\"תקן ישראלי פי 1220 , חלק3, מערכות גילוי אש - הוראות התקנה ודרישות כלליות.",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_16_3",
+      "number": "6.16.3",
+      "title": "התקנת מערכת כיבוי אוטומטית יבשה בלוח החשמל לפי תקן",
+      "category": "כבאות",
+      "text": "מערכת הכיבוי האוטומטית היבשה המותקנת בלוח החשמל תותקן על פי תקן ישראלי ת\"י 5210, מערכות לכיבוי -אש בארוסול, או תקן ישראלי ת\"י 1597ות כיבוי אש , מערכ אוטומטיות בגז כיבוי, בהתאם לסוג המערכת המותקנת.",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_16_4",
+      "number": "6.16.4",
+      "title": "מפסק חשמל חירום בעסק בתפוסה 200+",
+      "category": "כבאות",
+      "text": "בעסק שתפוסתו 200 איש ומעלה יותקן מפסק חשמל חירום במקום בולט ונגיש, אשר במקרה חירום ינתק את זרם החשמל לכל המבנה.",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [ { "text": "תפוסתו 200 איש ומעלה", "value": 200, "hint": "min" } ],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": 200,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_16_5",
+      "number": "6.16.5",
+      "title": "תחזוקת מערכת גילוי אש ועשן בלוח החשמל",
+      "category": "כבאות",
+      "text": "מערכת גילוי אש ועשן המותקנת בלוח החשמל תתוחזק במצב תקין בכל עת",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_16_6",
+      "number": "6.16.6",
+      "title": "בדיקה תקופתית למתקני החשמל בעסק",
+      "category": "כבאות",
+      "text": "דקו באופן תקופתי בהתאם להנחיית רשות הכבאות וההצלה, מתקני החשמל בעסק ייב \"בדיקה תקופתית למתקני חשמל  - עדכון\", ועל פי כל דין.",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_17",
+      "number": "6.17",
+      "title": "מערכת שליטה בעשן",
+      "category": "כבאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_17_1",
+      "number": "6.17.1",
+      "title": "סידורי שליטה בעשן בעסק בתפוסה 200+",
+      "category": "כבאות",
+      "text": "בעסק בתפוסה200 איש ומעלה יהיו סידורי שליטה בעשן בהתאם לקבוע בפרט3.9.33.1 לתוספת השנייה לתקנות התכנון והבנייה",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [ { "text": "בתפוסה200 איש ומעלה", "value": 200, "hint": "min" } ],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": 200,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_17_2",
+      "number": "6.17.2",
+      "title": "תחזוקת מערכת השליטה בעשן",
+      "category": "כבאות",
+      "text": "מערכת השליטה בעשן תתוחזק במצב תקין בכל עת.",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_18",
+      "number": "6.18",
+      "title": "מערכת מיזוג אוויר",
+      "category": "כבאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_18_1",
+      "number": "6.18.1",
+      "title": "מערכת מיזוג האוויר לפי ת\"י 1001",
+      "category": "כבאות",
+      "text": "מערכת מיזוג האוויר המותקנת בעסק תענה לנדרש בתקן ישראלי ת\"י1001 בטיחות אש בבניינים.",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_19",
+      "number": "6.19",
+      "title": "מערכת למסירת הודעות )כריזת חירום",
+      "category": "כבאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_19_1",
+      "number": "6.19.1",
+      "title": "מערכת כריזת חירום לעסק מעל 300 מ\"ר ולמעל 300 איש",
+      "category": "כבאות",
+      "text": "בעסק ששטחו העיקרי גדול מ300 מ\"ר ו מיועד לשמש מעל300 איש תותקן מערכת מסירת הודעות )כריזת חירום( בהתאם לקבוע בפרט 3.9.32.3. לתוספת השנייה לתקנות התכנון והבנייה.",
+      "bullets": [],
+      "citations": [ { "page": 56 } ],
+      "conditions": {
+        "area_ctx": [ { "text": "שטחו העיקרי גדול מ300 מ\"ר", "value": 300, "hint": "min" } ],
+        "seats_ctx": [ { "text": "מיועד לשמש מעל300 איש", "value": 300, "hint": "min" } ],
+        "temps_c_ctx": [],
+        "min_area_m2": 300,
+        "max_area_m2": null,
+        "min_seats": 300,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_19_2",
+      "number": "6.19.2",
+      "title": "תחזוקת מערכת כריזת חירום",
+      "category": "כבאות",
+      "text": "מערכת מסירת ההודעות )כריזת חירום( תתוחזק במצב תקין בכל עת",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_20",
+      "number": "6.20",
+      "title": "גנרטור חירום",
+      "category": "כבאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_20_1",
+      "number": "6.20.1",
+      "title": "גנרטור להפעלת משאבות/מפוחים בשעת חירום",
+      "category": "כבאות",
+      "text": "בעסק אשר נדרש להתקין משאבות מים לכיבוי אש או מפוחי יניקת עשן לפי מפרט זה ועל- פי כל דין, יותקן גנרטור שיהיה בכוחו לספק גם זרם חשמל בשעת חירום להפעלתם.",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_20_2",
+      "number": "6.20.2",
+      "title": "התקנת גנרטור לפי תקנות התכנון והבנייה",
+      "category": "כבאות",
+      "text": "הגנרטור יותקן בהתאם לקבוע בפרט 3.7.4.1 )ב-)ח( לתוספת השנייה לתקנות התכנון והבנייה.",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_20_3",
+      "number": "6.20.3",
+      "title": "תחזוקת גנרטור",
+      "category": "כבאות",
+      "text": "הגנרטור יתוחזק במצב תקין בכל עת",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_21",
+      "number": "6.21",
+      "title": "לוח פיקוד כבאים",
+      "category": "כבאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_21_1",
+      "number": "6.21.1",
+      "title": "לוח פיקוד כבאים - רכיבים נדרשים",
+      "category": "כבאות",
+      "text": "בעסק שנדרש על פי דין להתקין בו מערכות מתזים, גלאים וניהול עשן או מערכות נוספות זה עלשנקבעו לעניין -ידי נותן האישור, יותקן לוח פיקוד כבאים הכולל: לוח בקרה של מערכות גילוי וכיבוי אש, מפסק תלת-מצבי להפעלת מערכות שליטה בעשן, מפסק תלת- מצבי לשליטה במערכת על לחץ, מפסק שליטה בפתחי שחרור עשן אוטומטיים; וכן מפסק עלת כריזת חירום וטלפון כבאים חשמלי ראשי, מפסק הפעלת גנרטור חירום, מערכת הפ - ככל שמערכות אלה נדרשות.",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_22",
+      "number": "6.22",
+      "title": "משטר הפעלות מערכות בטיחות אש-אינטגרציה",
+      "category": "כבאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_22_1",
+      "number": "6.22.1",
+      "title": "בדיקת משטר הפעלות ואינטגרציה",
+      "category": "כבאות",
+      "text": "יש לבצע בדיקת משטר הפעלות ואינטגרציה בעסק בו נדרש להתקין שניים או יותר מאמצעי בטיחות האש וההצלה הבאים, ככל שקיימים:",
+      "bullets": [
+        { "idx": 1, "text": "מערכת גילוי אש ועשן" },
+        { "idx": 2, "text": "מערכת מתיזים אוטומטית" },
+        { "idx": 3, "text": "מערכת שליטה בעשן" },
+        { "idx": 4, "text": "גנרטור חירום" },
+        { "idx": 5, "text": "סגירת דלתות אוטומטית" },
+        { "idx": 6, "text": "מעליות" },
+        { "idx": 7, "text": "מערכת על לחץ" },
+        { "idx": 8, "text": "לוח פיקוד כבאים" }
+      ],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_22_2",
+      "number": "6.22.2",
+      "title": "אופן הבדיקה לפי הוראה 536",
+      "category": "כבאות",
+      "text": "הוראה מספר הבדיקה תיעשה בהתאם ל 536, משטר הפעלות מערכות בטיחות אש - אינטגרציה.",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_22_3",
+      "number": "6.22.3",
+      "title": "אישור התאמה להוראה 536",
+      "category": "כבאות",
+      "text": "יש לקבל אישור בכתב של גורם מוסמך או מהנדס על התאמת המערכות לדרישות הוראה מספר 536 הנ\"ל העתק האישור יוגש לנותן האישור. כאשר קיימת מערכת שחרור עשן מאולצת יש לצרף לאישור גם טבלת משטר בדיקה.",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_23",
+      "number": "6.23",
+      "title": "מערכת גז",
+      "category": "כבאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["uses_gas"],
+      "children": []
+    },
+    {
+      "id": "r_6_23_1",
+      "number": "6.23.1",
+      "title": "מערכת הגז לפי ת\"י 158",
+      "category": "כבאות",
+      "text": "ת\"י תקן ישראלי מערכת הגז המשמשת את העסק תענה לנדרש ב 158, מתקנים לגזים פחמימניים מעובים, המסופקים בתוך מכלים מיטלטלים.",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["uses_gas"],
+      "children": []
+    },
+    {
+      "id": "r_6_23_2",
+      "number": "6.23.2",
+      "title": "התקנים להפסקת זרימת גז במקרה דליפה",
+      "category": "כבאות",
+      "text": "יכת גז המשמשים את העסק יותקנו התקנים להפסקת על כל המכשירים והאביזרים לצר זרימת גז במקרה של דליפה, כולל ניתוק מקורות אנרגיה.",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["uses_gas"],
+      "children": []
+    },
+    {
+      "id": "r_6_23_3",
+      "number": "6.23.3",
+      "title": "צנרת הזנה מצינור פלב\"מ גמיש ומחוזק",
+      "category": "כבאות",
+      "text": "צנרת ההזנה לכל צרכני הגז תהיה עשויה מצינור מתכתי מסוג פלב\"מ גמיש ומחוזק ברשת פלב\"מ.",
+      "bullets": [],
+      "citations": [ { "page": 57 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["uses_gas"],
+      "children": []
+    }
+  ]
+}

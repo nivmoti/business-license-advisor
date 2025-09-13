@@ -1,0 +1,294 @@
+{
+  "rules": [
+    {
+      "id": "r_4_3_2",
+      "number": "4.3.2",
+      "title": "לבקשה לחידוש רישיון יצורפו המסמכים הבאים",
+      "category": "בריאות",
+      "text": "לבקשה לחידוש רישיון יצורפו המסמכים הבאים",
+      "bullets": [
+        { "idx": 1, "text": "הצהרת בעל עסק שלא נערכו שינויים בעסק ממועד הגשת הבקשה הקודמת לרישיון או חידושו." },
+        { "idx": 2, "text": "דו\"חות מתקין מוסמך על התקנה ובדיקה של אבזרים למניעת זרימת מים חוזרת )בפרק זה  -מז\"ח(." }
+      ],
+      "citations": [ { "page": 11 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_4_3_3",
+      "number": "4.3.3",
+      "title": "קיום דרישות מדריך נהלים ותקנות לטיפול במזון",
+      "category": "בריאות",
+      "text": "בעל העסק חייב לקיים את הדרישות המפורטות במדריך נהלים ותקנות  לטיפול במזון במטבחים גדולים. ראה נספח א'",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_4_3_4",
+      "number": "4.3.4",
+      "title": "שליחת מזון בהתאם להנחיות מ. הבריאות 2012",
+      "category": "בריאות",
+      "text": "להנחיות שליחת מזון שליחת מזון, במידה וקיימת, תתבצע בהתאם  - מ. הבריאות 2012. ראה נספח ב",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_4_4",
+      "number": "4.4",
+      "title": "דיווח",
+      "category": "בריאות",
+      "text": "דיווח",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_4_4_1",
+      "number": "4.4.1",
+      "title": "שמירת תוצאות ואישורים לחמש שנים",
+      "category": "בריאות",
+      "text": "בעל העסק ישמור את התוצאות, הנתונים, האישורים והמסמכים כלהלן לתקופה של חמש שנים ויעבירם לרשות הבריאות לפי דרישה:",
+      "bullets": [
+        { "idx": 1, "text": "אישור התקנת מז\"ח כאמור בסעיף4.6.3).1ג" },
+        { "idx": 2, "text": "ואוגרי מים חמים כאמור בסעיף אישור בדבר ביצוע ניקוי וחיטוי מאגרי מי שתייה 4.6.4." },
+        { "idx": 3, "text": "תעודות פינוי מפרידי שומן" }
+      ],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_4_5",
+      "number": "4.5",
+      "title": "מניעת עישון",
+      "category": "בריאות",
+      "text": "מניעת עישון",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_4_5_1",
+      "number": "4.5.1",
+      "title": "שלטי איסור עישון בעסק",
+      "category": "בריאות",
+      "text": "בעל העסק יקבע בעסק שלטים המורים על איסור העישון בהתאם להוראות חוק למניעת העישון במקומות ציבוריים והחשיפה לעישון, התשמ\"ג 1983, ותקנות הגבלת העישון דבמקומות ציבוריים )קביעת שלטים(, התשמ\"1984.",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["smoking_sign"],
+      "children": []
+    },
+    {
+      "id": "r_4_5_2",
+      "number": "4.5.2",
+      "title": "איסור הצבת מאפרה",
+      "category": "בריאות",
+      "text": "בעל העסק לא יציב מאפרה בתחום העסק למעט במקום נפרד לחלוטין שהוקצה לעישון כאמור בסעיף 4.5.3, אם הוקצה",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_4_5_3",
+      "number": "4.5.3",
+      "title": "הקצאת מקום נפרד לעישון",
+      "category": "בריאות",
+      "text": "הקצאת מקום נפרד לעישון - בעל העסק רשאי להקצות בתחום העסק מקום נפרד לחלוטין לעישון כמפורט בתוספת לחוק למניעת העישון במקומות ציבוריים והחשיפה לעישון,  התשמ\"ג1983.",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_4_5_4",
+      "number": "4.5.4",
+      "title": "מניעת עישון בתחום העסק",
+      "category": "בריאות",
+      "text": "בעל העסק יעשה כל שניתן כדי למנוע עישון בתחום העסק, למעט במקום נפרד שהוקצה לעישון כאמור בסעיף 4.5.3.",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_4_6",
+      "number": "4.6",
+      "title": "מי שתייה",
+      "category": "בריאות",
+      "text": "מי שתייה",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_4_6_1",
+      "number": "4.6.1",
+      "title": "אספקת מי שתייה ממקור מאושר",
+      "category": "בריאות",
+      "text": "לעסק יסופקו מי שתייה על ידי חיבור למערכת אספקת מים או למתקן הפקה שאושרו על ידי רשות הבריאות בלבד.",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_4_6_2",
+      "number": "4.6.2",
+      "title": "אחריות לאיכות מי השתייה; מים קרים וחמים",
+      "category": "בריאות",
+      "text": "המסופקים בגבולות הנכס הינם באיכות בעל העסק אחראי בכל עת לכך, שהמים הנדרשת על פי תקנות מי שתייה. חובה לספק מים קרים ומים חמים.",
+      "bullets": [],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_4_6_3",
+      "number": "4.6.3",
+      "title": "תכנון, הפעלה ותחזוקת מערכות מים בעסק",
+      "category": "בריאות",
+      "text": "מערכות המים בעסק יתוכננו, יוקמו, יופעלו ויתוחזקו בהתאם לדרישות המפורטות להלן:",
+      "bullets": [
+        { "idx": 1, "text": "חלק ה1  לפקודת בריאות העם1940: (א  תקנות בריאות העם )איכותם התברואית של מי -שתייה ומתקני מי שתייה( התשע\"ג2013. (ב  תקנות בריאות העם )מערכות בריכה למי שתייה(, התשמ\"ג1983. (ג  תקנות בריאות העם )התקנת מכשיר מונע זרימת מים חוזרת(, התשנ\"ב1992. (ד הוראות למתקני תברואה )הל\"ת(  - פרק 2: אספקת מים" },
+        { "idx": 2, "text": "תקנים" }
+      ],
+      "citations": [ { "page": 12 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    }
+  ]
+}

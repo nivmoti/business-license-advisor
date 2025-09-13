@@ -1,0 +1,849 @@
+{
+  "rules": [
+    {
+      "id": "r_11_5",
+      "number": "11.5",
+      "title": "שמירת תעודת משלוח 90 יום",
+      "category": "בריאות",
+      "text": "תעודת משלוח עם ציון שעת המשלוח וטמפרטורת המזון תשמר  למשך 90 יום לפחות. המידע יועמד לרשות נציג משרד הבריאות.",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_12",
+      "number": "12.",
+      "title": "העובדים",
+      "category": "בריאות",
+      "text": "לא יעבוד אדם עם מזון אלא אם:",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_1",
+      "number": "12.1",
+      "title": "לבוש חלוק נקי ובהיר",
+      "category": "בריאות",
+      "text": "הוא לבוש חלוק נקי בעל גוון בהיר המיועד אך ורק לעבודה",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_2",
+      "number": "12.2",
+      "title": "רחצת ידיים וניקיון",
+      "category": "בריאות",
+      "text": "ידיו וצפורניו נקיות והוא רוחץ את ידיו בסבון ובמברשת ציפורניים לפני התחלת העבודה וביציאה מהשירותים.",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_3",
+      "number": "12.3",
+      "title": "תכשיטים וכיסוי ראש בטיפול בבשר",
+      "category": "בריאות",
+      "text": "כשעל ידיו תכשיטים, צמידים או טבעות, זולת טבעת נישואין, ולא יטפל בבשר, בשר עופות או דגים, אלא כשהוא חובש כיסוי ראש.",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_12_4",
+      "number": "12.4",
+      "title": "מחלה מידבקת",
+      "category": "בריאות",
+      "text": "הוא חולה במחלה מידבקת או שהוא נושא מחוללי מחלה כזו;",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_5",
+      "number": "12.5",
+      "title": "חבורות ופצעים פתוחים",
+      "category": "בריאות",
+      "text": "פתוחים או מוגלתיים;על פניו, צווארו, זרועותיו או ידיו חבורות, פצעים",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_6",
+      "number": "12.6",
+      "title": "בדיקות רפואיות",
+      "category": "בריאות",
+      "text": "אינו ניגש לבדיקות רפואיות כאשר נדרש בידי המנהל לעשות כן",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_7",
+      "number": "12.7",
+      "title": "חריג – טובין שאינם מזון ומזון לא רגיש ארוז מראש",
+      "category": "בריאות",
+      "text": "על אף האמור לעיל,  רשאי אדם לעבוד עם טובין שאינם מזון ומזון לא רגיש ארוז מראש, , אם חבורות, פצעים פתוחים או מוגלתיים שעל פניו, צווארו, זרועותיו או ידיו מכוסים בתחבושת.",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_13",
+      "number": "13.",
+      "title": "הרכב לשליחת המזון ותנאים להובלת מזון",
+      "category": "בריאות",
+      "text": "על הובלת מזון יחולו הוראות אלה:",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_13_1",
+      "number": "13.1",
+      "title": "הרכב לתכלית זו בלבד",
+      "category": "בריאות",
+      "text": "הרכב לשליחת המזון יהיה לתכלית זו בלבד",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_13_2",
+      "number": "13.2",
+      "title": "הרכב נקי ומיועד לפעולה",
+      "category": "בריאות",
+      "text": "הרכב צריך להיות נקי ויהיה מיועד לפעולה זאת בלבד",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_13_3",
+      "number": "13.3",
+      "title": "משך הובלה מקסימלי – 3 שעות",
+      "category": "בריאות",
+      "text": "משך הזמן המקסימלי להובלת המזון ללקוח יהיה3 שעות",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_13_4",
+      "number": "13.4",
+      "title": "הובלה ברכב סגור ובמכלים מבודדים",
+      "category": "בריאות",
+      "text": "ל ברכב סגור ובציוד המבטיח שמירת טמפרטורה נאותה, מכלים  המזון יוב שלמים מבודדים בעלי מכסה הנסגר היטב המונעים כניסת זיהום מכל סוג שהוא ואיבוד טמפרטורה של המזון.",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_13_5",
+      "number": "13.5",
+      "title": "עמידה בתקנות ות\"י 1291",
+      "category": "בריאות",
+      "text": "הרכב להובלת המזון יהיה בהתאם לתקנות רישוי עסקים )תנאים תברואיים להובלת בשר, דגים, עופות ומוצריהם(, תשל\"ב, 1971, ותקן ישראלי 1291 .",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery", "serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_13_6",
+      "number": "13.6",
+      "title": "יציבות אריזות ברכב",
+      "category": "בריאות",
+      "text": "יש להבטיח את יציבותן ברכב של אריזות עם מזון",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_13_7",
+      "number": "13.7",
+      "title": "מכלים מבודדים ומדופנים",
+      "category": "בריאות",
+      "text": "הציוד או המכלים יהיו מבודדים ומדופנים בפלסטיק נשלף חד פעמי או שיהיו ניתנים לניקוי לח.",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_13_8",
+      "number": "13.8",
+      "title": "משטח הובלה ניתן לשטיפה",
+      "category": "בריאות",
+      "text": "לשטיפה .המשטח עליו מובל המזון יהיה ניתן",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery"],
+      "children": []
+    },
+    {
+      "id": "r_13_9",
+      "number": "13.9",
+      "title": "טמפרטורות לשמירת מזון בהובלה",
+      "category": "בריאות",
+      "text": "בזמן הובלה מזון ישמר לפי הוראות יצרן או בטמפרטורות הבאות א. מזון חם יוחזק בטמפרטורה פנימית של לפחות 65 + מעלות צלסיוס ב. מזון קר יוחזק בטמפרטורה פנימית שלא תעלה על 4 + מעלות צלסיוס ג. מזון קפוא יוחזק בטמפרטורה פנימית שלא תעלה על 18 -  ת צלסיוס.מעלו ד. ביצים יוחזקו בטמפרטורה שעד 20 מעלות צלסיוס",
+      "bullets": [],
+      "citations": [ { "page": 41 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [
+          { "text": "לפחות 65 + מעלות צלסיוס", "value": 65, "hint": "min" },
+          { "text": "שלא תעלה על 4 + מעלות צלסיוס", "value": 4, "hint": "max" },
+          { "text": "שלא תעלה על 18 -  מעלות צלסיוס", "value": -18, "hint": "max" },
+          { "text": "עד 20 מעלות צלסיוס", "value": 20, "hint": "max" }
+        ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["delivery", "food_hot", "food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_14",
+      "number": "14 .",
+      "title": "איסוף פסולת",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_14_1",
+      "number": "14.1",
+      "title": "כלי קיבול לפסולת לפי דרישות הרשות",
+      "category": "בריאות",
+      "text": "הפסולת המוצקה תיאסף בכלי קיבול המיועדים למטרה זו, לפי דרישות הרשות  המקומית.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_14_2",
+      "number": "14.2",
+      "title": "חומר כלי הקיבול ושקית ניילון",
+      "category": "בריאות",
+      "text": "כלי הקיבול שיימצאו בתוך העסק יהיו עשויים חומר חלק ובלתי מחליד שאינו סופג רטיבות, ובתוכם שקית ניילון מתאימה.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_14_3",
+      "number": "14.3",
+      "title": "מכסה לכלי הקיבול",
+      "category": "בריאות",
+      "text": "לכלי הקיבול יהיה מכסה",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_14_4",
+      "number": "14.4",
+      "title": "ניקוי ושטיפה עם הרקת הפסולת",
+      "category": "בריאות",
+      "text": "עם הרקת הפסולת המוצקה, ינוקו ויישטפו כלי הקיבול והאזור סביבו",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_14_5",
+      "number": "14.5",
+      "title": "פסולת מזון רגיש בקירור ובנפרד",
+      "category": "בריאות",
+      "text": "פסולת מזון רגיש תישמר בקירור ובנפרד עד לפינויה, במכלים המסומנים באותיות בולטות לעין \"לא ראוי למאכל אדם\".",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_14_6",
+      "number": "14.6",
+      "title": "פינוי יומי לכלים מרכזיים",
+      "category": "בריאות",
+      "text": "הרחקת הפסולת המוצקה מכלי הקיבול כאמור בסעיף10.1  אל מכלים מרכזיים תיעשה בכל יום עבודה, בסופו לפחות.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_14_7",
+      "number": "14.7",
+      "title": "תנאים לאחסון וטיפול בפסולת – קביעת רשות מקומית",
+      "category": "בריאות",
+      "text": "ת יקבעו ע\"י  הרשות המקומית. תנאים לאחסון וטיפול בפסול",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15",
+      "number": "15 .",
+      "title": "חדר השירותים",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_1",
+      "number": "15.1",
+      "title": "מספר קבועות סניטריות לפי הל\"ת למרכולים",
+      "category": "בריאות",
+      "text": "בכל עסק יהיה חדר או חדרי שירותים, בהם מספר קבועות סניטריות לפי הוראות הל\"ת למרכולים.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_2",
+      "number": "15.2",
+      "title": "שירותים בצמוד או בקרבה לעסק",
+      "category": "בריאות",
+      "text": "השירותים יהיו בצמוד או בקרבה לעסק, להנחת דעתו של המנהל",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_3",
+      "number": "15.3",
+      "title": "גישה נוחה לשירותים",
+      "category": "בריאות",
+      "text": "תהיה גישה נוחה אליהם",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_4",
+      "number": "15.4",
+      "title": "הפרדה פיזית מוחלטת לחדרי מזון",
+      "category": "בריאות",
+      "text": "יהיה מבוא המשמש להפרדה פיזית מוחלטת בינם לבין החדרים שבהם מטפלים במזון או מאחסנים מזון או חמרי אריזה.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_5",
+      "number": "15.5",
+      "title": "ציפוי קירות עד 2 מטר לפחות",
+      "category": "בריאות",
+      "text": "הקירות יהיו מצופים באריחים בהירים עד לגובה של2 מטרים לפחות, ומעליהם טיח וסיד בגוון בהיר הניתנים לניקוי בנקל.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_6",
+      "number": "15.6",
+      "title": "שלט חובת רחצת הידיים",
+      "category": "בריאות",
+      "text": "על קירות חדר השירותים והפרוזדור שלידו יימצא שלט המדגיש  את חובת רחצת הידיים.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_7",
+      "number": "15.7",
+      "title": "ניקיון וציוד תאי השירותים",
+      "category": "בריאות",
+      "text": "בתי השימוש יהיו נקיים ושלמים ותאי השירותים יהיו מצויידים בכל הדרוש לשמירת הגיינה ונקיון של המשתמשים.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_8",
+      "number": "15.8",
+      "title": "בכיורים – הוראות כלליות",
+      "category": "בריאות",
+      "text": "בכיורים יתקיימו הוראות אלה",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_8_1",
+      "number": "15.8.1",
+      "title": "כיורים שלמים נקיים ותקינים",
+      "category": "בריאות",
+      "text": "הם יהיו שלמים, נקיים ותקינים",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_8_2",
+      "number": "15.8.2",
+      "title": "מים חמים וקרים בכל שעות היום",
+      "category": "בריאות",
+      "text": "יסופקו בהם מים חמים וקרים בכל שעות היום",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_15_8_3",
+      "number": "15.8.3",
+      "title": "סבון נוזלי או דטרגנט",
+      "category": "בריאות",
+      "text": "לידם יימצא סבון נוזלי או דטרגנט",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_8_4",
+      "number": "15.8.4",
+      "title": "אמצעי חד-פעמי לניגוב ומכל איסוף",
+      "category": "בריאות",
+      "text": "בקירבתם יימצא אמצעי לשימוש חד -פעמי לניגוב ידיים ומכל איסוף פסולת.",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_16",
+      "number": "16.",
+      "title": "בעלי חיים – חריג לכלב נחייה",
+      "category": "בריאות",
+      "text": "כלב נחייה של עיוור.לא יוכנסו לעסק בעלי חיים, למעט",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_17",
+      "number": "17.",
+      "title": "איסור לינה ומעבר למגורים",
+      "category": "בריאות",
+      "text": "לא ילון אדם ולא יגור בעסק ולא יהיה מעבר כלשהו בין העסק למבנה מגורים .",
+      "bullets": [],
+      "citations": [ { "page": 42 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "rules": [
+    {
+      "id": "r_11_2",
+      "number": "11.2",
+      "title": "רצף שמירת הטמפרטורות",
+      "category": "בריאות",
+      "text": "רצף שמירת הטמפרטורות 10",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_11_3",
+      "number": "11.3",
+      "title": "שטיפה וחיטוי ירקות ופירות",
+      "category": "בריאות",
+      "text": "שטיפה וחיטוי ירקות ופירות    7       במקום המיועד לכך",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_11_4",
+      "number": "11.4",
+      "title": "הפשרת מוצרים קפואים מן החי נעשית כנדרש",
+      "category": "בריאות",
+      "text": "הפשרת מוצרים קפואים מן החי נעשית כנדרש 7",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_11_5",
+      "number": "11.5",
+      "title": "השארת דוגמאות מזון",
+      "category": "בריאות",
+      "text": "השארת דוגמאות מזון 2",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_1",
+      "number": "12.1",
+      "title": "עובדי המטבח –ביגוד , כיסוי ראש",
+      "category": "בריאות",
+      "text": "עובדי המטבח  –ביגוד , כיסוי ראש  מס' 7 2",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_2",
+      "number": "12.2",
+      "title": "בריאות,היגיינה אישית",
+      "category": "בריאות",
+      "text": "בריאות,היגיינה אישית 4",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_3",
+      "number": "12.3",
+      "title": "חדרי הלבשה",
+      "category": "בריאות",
+      "text": "חדרי הלבשה 2",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_4",
+      "number": "12.4",
+      "title": "הכשרת עובדים",
+      "category": "בריאות",
+      "text": "הכשרת עובדים 4",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_13_1",
+      "number": "13.1",
+      "title": "הגשת מזון - מתקנים לשמירת מזון בקירור",
+      "category": "בריאות",
+      "text": "הגשת מזון  - מתקנים לשמירת מזון בקירור מס' 8 8",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_13_2",
+      "number": "13.2",
+      "title": "מתקנים לשמירת מזון חם",
+      "category": "בריאות",
+      "text": "מתקנים לשמירת מזון חם 8",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_13_3",
+      "number": "13.3",
+      "title": "ניקוי כלים להגשת מזון",
+      "category": "בריאות",
+      "text": "ניקוי כלים להגשת מזון 2",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_14",
+      "number": "14",
+      "title": "חרד אוכל-  תברואה כללית וניקיון",
+      "category": "בריאות",
+      "text": "חרד אוכל-  תברואה כללית וניקיון מס' 9 2",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_1",
+      "number": "15.1",
+      "title": "מבנה ותחזקתו -רצפה",
+      "category": "בריאות",
+      "text": "מבנה ותחזקתו  -רצפה    מס' 10 2",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_2",
+      "number": "15.2",
+      "title": "קירות חלקים בעלי גוון בהיר",
+      "category": "בריאות",
+      "text": "קירות  חלקים בעלי גוון בהיר 2",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_3",
+      "number": "15.3",
+      "title": "חלונות (שלמות וניקיון)",
+      "category": "בריאות",
+      "text": "חלונות     ) שלמות וניקיון ( 1",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_4",
+      "number": "15.4",
+      "title": "רשתות מיגון נגד זבובים וחרקים",
+      "category": "בריאות",
+      "text": "רשתות מיגון נגד זבובים וחרקים 2",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_5",
+      "number": "15.5",
+      "title": "דלתות (שלמות וניקיון)",
+      "category": "בריאות",
+      "text": "דלתות   (שלמות וניקיון ( 1",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_6",
+      "number": "15.6",
+      "title": "תעלות ניקוז וביוב",
+      "category": "בריאות",
+      "text": "תעלות ניקוז וביוב 4",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["sewage"],
+      "children": []
+    },
+    {
+      "id": "r_15_7",
+      "number": "15.7",
+      "title": "מים חמים, מים קירם",
+      "category": "בריאות",
+      "text": "מים חמים, מים קירם 5",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_15_8",
+      "number": "15.8",
+      "title": "מיזוג ,  אוורור, מינדפים ותאורה",
+      "category": "בריאות",
+      "text": "מיזוג ,  אוורור, מינדפים ותאורה 3",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_9",
+      "number": "15.9",
+      "title": "מערכת ביוב",
+      "category": "בריאות",
+      "text": "מערכת ביוב 4",
+      "bullets": [],
+      "citations": [ { "page": 46 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["sewage"],
+      "children": []
+    },
+    {
+      "id": "r_16_1",
+      "number": "16.1",
+      "title": "שירותים - ציפוי קירות , אביזרים",
+      "category": "בריאות",
+      "text": "שירותים  -  ציפוי קירות , אביזרים             מס' 11 1",
+      "bullets": [],
+      "citations": [ { "page": 47 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_16_2",
+      "number": "16.2",
+      "title": "מס. קבועות סניטאריות",
+      "category": "בריאות",
+      "text": "מס. קבועות סניטאריות 3",
+      "bullets": [],
+      "citations": [ { "page": 47 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_17",
+      "number": "17",
+      "title": "תוכנית הדברת מזיקים",
+      "category": "בריאות",
+      "text": "תוכנית הדברת מזיקים    2               כנדרש  )מדביר מוסמך,חומרים מאושרים(",
+      "bullets": [],
+      "citations": [ { "page": 47 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_18",
+      "number": "18",
+      "title": "התאמה לתוכנית מאושרת",
+      "category": "בריאות",
+      "text": "התאמה לתוכנית מאושרת    7",
+      "bullets": [],
+      "citations": [ { "page": 47 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_19",
+      "number": "19",
+      "title": "סה((כ",
+      "category": "בריאות",
+      "text": "סה((כ",
+      "bullets": [],
+      "citations": [ { "page": 47 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    }
+  ]
+}

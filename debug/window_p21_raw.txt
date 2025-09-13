@@ -1,0 +1,930 @@
+{
+  "rules": [
+    {
+      "id": "r_2_5_1",
+      "number": "2.5.1",
+      "title": "שמירת מזון \"בשל/הקפא\" ו\"בשל/הגש\" עד 48 שעות בקירור",
+      "category": "בריאות",
+      "text": "ניתן לשמור על מזון, שהוכן בשיטת \"בשל/ הקפא\" ו\"בשל/הגש\" שנשאר במטבח הראשי עד 48 שעות בקירור",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_2_5_2",
+      "number": "2.5.2",
+      "title": "איסור שימוש בשאריות אוכל",
+      "category": "בריאות",
+      "text": "אין להשתמש בשאריות אוכל, שנותרו בחדר האוכל ובעגלות ההגשה )אם הן קיימות(.",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6",
+      "number": "2.6",
+      "title": "עובדי המטבח",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_1",
+      "number": "2.6.1",
+      "title": "הדרכת עובדים לטיפול במזון והשתלמות בנושא איכות",
+      "category": "בריאות",
+      "text": "אחד המקורות להעברת מחלות הוא האדם במטבח יימצאו עובדים, שעברו הדרכה לטיפול במזון על פי דרישת המנהל. במטבח ימצא עובד בכיר אחד לפחות, שעבר השתלמות בנושא איכות טיפול במזון )על-יאות ו/או פי תכנית ההדרכה של משרד הברHACCP .(",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2",
+      "number": "2.6.2",
+      "title": "היגיינה אישית של עובדי המטבח",
+      "category": "בריאות",
+      "text": "יש להקפיד על ההיגיינה האישית של עובדי המטבח להלן מספר כללים לשמירה על היגיינה אישית של העובדים:",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_1",
+      "number": "2.6.2.1",
+      "title": "ניקיון והיגיינה בכל שעות העבודה",
+      "category": "בריאות",
+      "text": "יש להקפיד על ניקיון והיגיינה בכל שעות העבודה",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_2",
+      "number": "2.6.2.2",
+      "title": "החלפת בגדים לפני הכניסה למטבח",
+      "category": "בריאות",
+      "text": "גדי עבודה לפני הכניסה . על העובד להחליף את בגדי הבית בב למטבח.",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_3",
+      "number": "2.6.2.3",
+      "title": "שמירת בגדי הבית מחוץ לאזור המזון",
+      "category": "בריאות",
+      "text": "יש לשמור על בגדי הבית במקום מיוחד, מחוץ לאזור המיועד לטיפול ואחסנה של מזון.",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_4",
+      "number": "2.6.2.4",
+      "title": "רחיצת ידיים בשלבי הטיפול במזון",
+      "category": "בריאות",
+      "text": "יש לרחוץ את הידיים לפני תחילת העבודה. ובשלבים שונים של ירותים.הטיפול במזון, כמו גם לאחר ביקור בש",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_5",
+      "number": "2.6.2.5",
+      "title": "איסור התעטשות או עישון בקרבת מזון לא מוגן",
+      "category": "בריאות",
+      "text": "אין להתעטש או לעשן בקרבת מזון לא מוגן",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["smoking_sign"],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_6",
+      "number": "2.6.2.6",
+      "title": "ציפורניים גזוזות וידיים ללא פצעים",
+      "category": "בריאות",
+      "text": "יש להקפיד על ציפורניים גזוזות וידיים ללא פצעים",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_7",
+      "number": "2.6.2.7",
+      "title": "כיסוי השיער",
+      "category": "בריאות",
+      "text": "יש לחבוש כובע או מטפחת לכיסוי השער",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_8",
+      "number": "2.6.2.8",
+      "title": "בדיקה רפואית לפי דרישת משרד הבריאות",
+      "category": "בריאות",
+      "text": "על העובד לעבור בדיקה רפואית, באם נדרש ע\"י נציג משרד הבריאות",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["בריאות"],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_9",
+      "number": "2.6.2.9",
+      "title": "איסור טיפול במזון לאחר מחלה מדבקת ללא אישור רופא",
+      "category": "בריאות",
+      "text": "אסור לעובד, לאחר מחלה מדבקת ,לטפל במזון, אלא באישור הרופא",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_6_2_10",
+      "number": "2.6.2.10",
+      "title": "איסור עבודה במזון בעת מחלה מדבקת או פצעים פתוחים",
+      "category": "בריאות",
+      "text": "אין לעבוד במזון כשחולים במחלה מדבקת כלשהי או כשיש פצעים פתוחים או מוגלתיים.",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7",
+      "number": "2.7",
+      "title": "אחסון, הכנה ועיבוד המזון",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1",
+      "number": "2.7.1",
+      "title": "הפונקציות העיקריות במטבח",
+      "category": "בריאות",
+      "text": "הפונקציות העיקריות במטבח",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_1",
+      "number": "2.7.1.1",
+      "title": "איזור מינהל המטבח",
+      "category": "בריאות",
+      "text": "איזור מינהל המטבח;",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_2",
+      "number": "2.7.1.2",
+      "title": "חצר",
+      "category": "בריאות",
+      "text": "חצר",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_2_1",
+      "number": "2.7.1.2.1",
+      "title": "רמפת העמסה או פריקה",
+      "category": "בריאות",
+      "text": "רמפת העמסה או פריקה",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_2_2",
+      "number": "2.7.1.2.2",
+      "title": "אחסון אריזות ריקות באופן מוגבה ומוגן",
+      "category": "בריאות",
+      "text": "אחסון האריזות הריקות יהיה מוגבה מהרצפה ומאוחסן בצורה שתמנע מטרדים סביבתיים;",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_2_3",
+      "number": "2.7.1.2.3",
+      "title": "חדר/מתקן אשפה עם מתקני שטיפה וניקוז",
+      "category": "בריאות",
+      "text": "חדר או מתקן האשפה ,המשמשים את בית האוכל, יהיו ממוקמים באזור פריקה והעמסה,ומצוידים במתקן שטיפה וניקוז; עם גישה נוחה ל",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_3",
+      "number": "2.7.1.3",
+      "title": "חדר אנרגיה ותחזוקה",
+      "category": "בריאות",
+      "text": "חדר אנרגיה ותחזוקה",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_4",
+      "number": "2.7.1.4",
+      "title": "משרד מחסנאי העוסק גם בקבלת המזון",
+      "category": "בריאות",
+      "text": "משרד מחסנאי העוסק גם בקבלת המזון",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5",
+      "number": "2.7.1.5",
+      "title": "אזורי אחסון",
+      "category": "בריאות",
+      "text": "אזורי אחסון",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_1",
+      "number": "2.7.1.5.1",
+      "title": "אזור קבלה\\שקילה",
+      "category": "בריאות",
+      "text": "אזור קבלה\\שקילה )ראה סעיף1 קבלת מזון, לגבי הדרישות הספציפיות(;",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_2",
+      "number": "2.7.1.5.2",
+      "title": "מחסן חודשי כולל הקפאה וקירור",
+      "category": "בריאות",
+      "text": "מחסן חודשי, מאחסן מזונות לגבוי כמויות במצבים משתנים, כולל מחסני הקפאה וקירור;",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_3",
+      "number": "2.7.1.5.3",
+      "title": "מחסן יומי עד שבועי כולל הקפאה וקירור",
+      "category": "בריאות",
+      "text": "מחסן יומי עד שבועי כולל מחסני הקפאה וקירור",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_4",
+      "number": "2.7.1.5.4",
+      "title": "מחסנים לירקות ופירות לפני ניקוי",
+      "category": "בריאות",
+      "text": "מחסנים לירקות ופירות לפני ניקוי",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_5",
+      "number": "2.7.1.5.5",
+      "title": "מחסן דטרגנטים וכלי ניקוי",
+      "category": "בריאות",
+      "text": "מחסן דטרגנטים וכלי ניקוי",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_6",
+      "number": "2.7.1.5.6",
+      "title": "מחסנים לירקות ופירות אחרי ניקוי",
+      "category": "בריאות",
+      "text": "מחסנים לירקות ופירות אחרי ניקוי",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_7",
+      "number": "2.7.1.5.7",
+      "title": "מחסן לציוד וכלים",
+      "category": "בריאות",
+      "text": "מחסן לציוד וכלים",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_8",
+      "number": "2.7.1.5.8",
+      "title": "הפרדה באחסון",
+      "category": "בריאות",
+      "text": "יש להפריד באחסון בין",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_8_1",
+      "number": "2.7.1.5.8.1",
+      "title": "בשר בעלי כנף",
+      "category": "בריאות",
+      "text": "בשר בעלי כנף",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_8_2",
+      "number": "2.7.1.5.8.2",
+      "title": "בשר בהמות",
+      "category": "בריאות",
+      "text": "בשר בהמות",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_1_5_8_3",
+      "number": "2.7.1.5.8.3",
+      "title": "דגים",
+      "category": "בריאות",
+      "text": "דגים",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2",
+      "number": "2.7.2",
+      "title": "איזור הכנת המזון",
+      "category": "בריאות",
+      "text": "אזור טיפול והכנת בשר יכלול:",
+      "bullets": [],
+      "citations": [ { "page": 21 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_1",
+      "number": "2.7.2.1",
+      "title": "חדר הקפאה ומקפיא בטמפרטורה מתאימה",
+      "category": "בריאות",
+      "text": "של מינוס חדר הקפאה ומקפיא ,שישמרו על המזון, בטמפרטורה 18 מעלות צלסיוס מינימום וחדר קירור למזון בשרי.",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "מינוס 18 מעלות צלסיוס מינימום", "value": -18, "hint": "min" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold", "serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_2",
+      "number": "2.7.2.2",
+      "title": "מתקן הפשרה ומקרר ב-+10°C או מתקן הפשרה מהירה",
+      "category": "בריאות",
+      "text": "מתקן הפשרה ומקרר בטמפרטורה  של פלוס10 מעלות צלזיוס או לחילופין מתקן המיועד להפשרה מהירה, העומד בדרישות המנהל ומופעל על פי הוראות ההפעלה של היצרן.",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "פלוס10 מעלות צלזיוס", "value": 10, "hint": null } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold", "serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_3",
+      "number": "2.7.2.3",
+      "title": "חדר ממוזג לטיפול והכנת בשר ב-+20°C",
+      "category": "בריאות",
+      "text": "חדר ממוזג של פלוס20 פול והכנת בשר.מעלות צלזיוס לטי",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "פלוס20 מעלות צלזיוס", "value": 20, "hint": null } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_4",
+      "number": "2.7.2.4",
+      "title": "מקרר עגלות לבשר בתהליך העיבוד",
+      "category": "בריאות",
+      "text": "מקרר עגלות לבשר בתהליך העיבוד0 מעלות צלזיוס(, לפי הצורך",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "0 מעלות צלזיוס", "value": 0, "hint": null } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold", "serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_5",
+      "number": "2.7.2.5",
+      "title": "אזור הכנת דגים והפרדה מאזורים בשריים",
+      "category": "בריאות",
+      "text": "אזור הכנת דגים תהיה הפרדה מוחלטת בינו לבין אזור הכנת בשר בהמות ובשר בעלי כנף בכל שלבי האחסנה, ההכנה והייצור.",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_6",
+      "number": "2.7.2.6",
+      "title": "אזור קירור המזון לאחר בישולו",
+      "category": "בריאות",
+      "text": "אזור קירור המזון לאחר בישולו",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_6_1",
+      "number": "2.7.2.6.1",
+      "title": "צינון ואחסון: +2°C בשיטת \"בשל/קרר\" או +4°C בשיטת \"בשל/הגש\"",
+      "category": "בריאות",
+      "text": "מזון שמועד הגשתו אינו ביום ההכנה יצונן במקרר משב קור ויאוחסן בחדר קירור בטמפרטורה של פלוס 2 מעלות צלזיוס, זאת אם המטבח עובד בשיטה \"בשל/ קרר\" או פלוס 4 מעלות אם המטבח עובד בשיטה \"בשל/ הגש",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [
+          { "text": "פלוס 2 מעלות צלזיוס", "value": 2, "hint": null },
+          { "text": "פלוס 4 מעלות", "value": 4, "hint": null }
+        ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_6_2",
+      "number": "2.7.2.6.2",
+      "title": "צינון ללא משב-קור: מ-+70°C עד +5°C בתוך שעתיים",
+      "category": "בריאות",
+      "text": "צינון מזון שלא באמצעות מקרר משב קור יעשה כדלקמן: תבשיל חם המקורר מטמפרטורה של פלוס 70 בתוך המזון עד לטמפרטורה של פלוס5 מעלות צלזיוס –יעשה במשך שעתיים לכל היותר וישמר בקירור בהתאם לייעודו )תקנות לבתי אוכל ותקנות רישוי עסקים לייצור מזון נספח א'(. ",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [
+          { "text": "פלוס 70", "value": 70, "hint": null },
+          { "text": "עד לטמפרטורה של פלוס5 מעלות צלזיוס", "value": 5, "hint": "max" }
+        ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold", "food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_2_7_2_6_3",
+      "number": "2.7.2.6.3",
+      "title": "מומלץ לקרר בכלים בעומק עד 5 ס\"מ",
+      "category": "בריאות",
+      "text": "על-מנת להגיע לתהליך הקירור הנדרש ,כמפורט למעלה, מומלץ לקרר את המזון החם בתבנית או מכלים, בהם גובה המזון לא יעלה על 5 ס\"מ; בנתחי בשר )גושי",
+      "bullets": [],
+      "citations": [ { "page": 22 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold", "food_hot", "serves_meat"],
+      "children": []
+    }
+  ]
+}

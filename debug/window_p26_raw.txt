@@ -1,0 +1,684 @@
+{
+  "rules": [
+    {
+      "id": "r_3_7_1_5_",
+      "number": "3.7.1.5.",
+      "title": "הסרת אריזה והכשרת בשר במים קרים",
+      "category": "בריאות",
+      "text": "הסרת האריזה מבשר, עופות ודגים גולמיים תעשה באזור שיועד לכך הכשרת בשר תעשה במים ,שהטמפרטורה שלהם אינה עולה על פלוס 7 משו בקרח, העשוי ממים באיכות מי מעלות צלזיוס. לקירור המים ישת שתייה .",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "הטמפרטורה שלהם אינה עולה על פלוס 7 מעלות צלזיוס", "value": 7, "hint": "max" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water","serves_meat"],
+      "children": []
+    },
+    {
+      "id": "r_3_7_1_6_",
+      "number": "3.7.1.6.",
+      "title": "הכנת מזונות ייחודיים בציוד ייעודי",
+      "category": "בריאות",
+      "text": "יש להכין מזונות ייחודיים כגון תערובות ותרכובות מזון )פורמולות(, במקום המיועד לכך בלבד תוך שימוש בציוד מיוחד.",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_7_2",
+      "number": "3.7.2",
+      "title": "מזון שעובר טיפול טרמי",
+      "category": "בריאות",
+      "text": "מזון שעובר טיפול טרמי",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_3_7_2_1",
+      "number": "3.7.2.1",
+      "title": "בישול תוך בחישה עד רתיחה",
+      "category": "בריאות",
+      "text": "בישול המזון ייעשה תוך כדי בחישה, על מנת שהתבשיל יגיע לטמפרטורה של רתיחה בכל חלקיו.",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_3_7_2_2",
+      "number": "3.7.2.2",
+      "title": "צלייה, טיגון או אפייה עד 72°C",
+      "category": "בריאות",
+      "text": "צלייה, טיגון או אפיית המזון יבוצעו עד שטמפרטורת המזון, בנקודה הקרה ביותר, תגיע לפלוס 72 חות, למשך מעלות צלזיוס לפ2 דקות",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "תגיע לפלוס 72 מעלות צלזיוס", "value": 72, "hint": null } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot","frying"],
+      "children": []
+    },
+    {
+      "id": "r_3_7_2_3",
+      "number": "3.7.2.3",
+      "title": "קירור מהיר לאחר עיבוד בחום",
+      "category": "בריאות",
+      "text": "מזון שעבר עיבוד בחום והמוגש קר, יעבור קירור מהיר, במתקן משב קור או מתקן אחר שאושר על-ידי המנהל.",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot","food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_3_7_2_4",
+      "number": "3.7.2.4",
+      "title": "צינון ואחסון בקירור ב-2°C",
+      "category": "בריאות",
+      "text": "מזון שעבר עיבוד בחום ומוגש תוך1-4 קן שאושר ימים, יעבור צינון במת על-ידי המנהל ויאוחסן בקירור, בטמפרטורה של פלוס 2 מעלות צלזיוס",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "בטמפרטורה של פלוס 2 מעלות צלזיוס", "value": 2, "hint": null } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot","food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_3_7_2_5",
+      "number": "3.7.2.5",
+      "title": "טיפול טרמי בביצים",
+      "category": "בריאות",
+      "text": "אין להשתמש בביצים סדוקות ושבורות; יש להוציא את הביצה מהמקרר סמוך לשימוש בה. במוסדות רפואיים אין להגיש ביצים רכות, \"ביצת עין\", ביצים \"מקושקשות\" \"אומלטים\", חביתות. יש לדאוג שטיגון הביצה יהיה כזה שהחלבון ייקרש כולו. ושך )כמו במקרה שרוצים להכניס את הביצה יחד עם הקליפה לבישול ממ בחמין(, ניתן לשטוף את הביצה לפני השימוש כדי למנוע זיהום; באופן כללי אין לשטוף ביצים; השטיפה עלולה לגרום לחדירת החיידקים דרך הקליפה. מפעל בעל ניתן להשתמש בביצים ,שעברו תהליך פסטור והקפאה, של רישיון יצרן. יש להקפיד על הפשרה במקרר; יש להשתמש בכל החומר המופשר אותו יום, אין להקפיא שנית.",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["frying"],
+      "children": []
+    },
+    {
+      "id": "r_3_8",
+      "number": "3.8",
+      "title": "מזון המוגש קר",
+      "category": "בריאות",
+      "text": "מזון המוגש קר",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_3_8_1",
+      "number": "3.8.1",
+      "title": "אחסון מזון קר מוכן עד 5°C",
+      "category": "בריאות",
+      "text": "מזון שאינו עובר טיפול טרמי ומוגש קר )סלטים וכו'(:  יש לאחסן , עם סיום ההכנה, במקרר למזון מוכן להגשה, בטמפרטורה שלא תעלה על פלוס 5 מעלות צלזיוס, עד לחלוקה.",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "טמפרטורה שלא תעלה על פלוס 5 מעלות צלזיוס", "value": 5, "hint": "max" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_3_8_2",
+      "number": "3.8.2",
+      "title": "איסור שימוש בביצים במוצרים ללא חימום ומיונז",
+      "category": "בריאות",
+      "text": "אין להשתמש בביצים במוצרים שאינם עוברים חימום נוסף. אסור להכין מיונז במטבח",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_9",
+      "number": "3.9",
+      "title": "חלוקת המזון",
+      "category": "בריאות",
+      "text": "חלוקת המזון",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_9_1",
+      "number": "3.9.1",
+      "title": "שמירת מזון חם במינימום 65°C",
+      "category": "בריאות",
+      "text": "מזון חם )מוגש חם( בצוברים או בכל צורה אחרת, ישמר בטמפרטורה של מינימום  65 + מעלות צלזיוס עד לצריכתו, במכלים שומרי חום",
+      "bullets": [],
+      "citations": [ { "page": 26 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "בטמפרטורה של מינימום 65+ מעלות צלזיוס", "value": 65, "hint": "min" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_3_9_2",
+      "number": "3.9.2",
+      "title": "שמירת מזון קר עד 5°C",
+      "category": "בריאות",
+      "text": "מזון קר )מוגש קר( ישמר בטמפרטורה שלא תעלה על5 + מעלות צלזיוס במכלים שומרי קור או בדלפקים מקוררים",
+      "bullets": [],
+      "citations": [ { "page": 26 }, { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "טמפרטורה שלא תעלה על 5+ מעלות צלזיוס", "value": 5, "hint": "max" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_3_9_3",
+      "number": "3.9.3",
+      "title": "הגשת מזון במגשים אישיים תוך חצי שעה",
+      "category": "בריאות",
+      "text": "ר במגשים אישיים יוגש תוך חצי שעה מסיום החלוקה; המזון המחולק ומועב מזון זה יחולק במהירות המרבית.",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_9_4",
+      "number": "3.9.4",
+      "title": "מזון קר העובר חימום",
+      "category": "בריאות",
+      "text": "מזון קר העובר חימום",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold","food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_3_9_4_1",
+      "number": "3.9.4.1",
+      "title": "העברת מזון קר לחימום",
+      "category": "בריאות",
+      "text": "יועבר כמזון קר, במגשים אישיים או צוברים, למטבחון",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_3_9_4_2_",
+      "number": "3.9.4.2.",
+      "title": "חימום מזון קר ללפחות 72°C והגשה מיד",
+      "category": "בריאות",
+      "text": "יעבור טיפול טרמי מתאים, כך שהטמפרטורה, בנקודה הקרה,  תהיה לפחות72  + מעלות צלזיוס ויוגש מיד, לא יאוחר מחצי שעה מסיום החימום",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "תהיה לפחות 72+ מעלות צלזיוס", "value": 72, "hint": "min" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_3_9_5",
+      "number": "3.9.5",
+      "title": "העברת מזון בטמפרטורת החדר",
+      "category": "בריאות",
+      "text": "מזון בטמפרטורת החדר ) שאינו דורש קירור או חימום (, יועבר  לחלוקה ,נקי או מוכן ילה, בצורה שלא יזדהם בתהליך החלוקה וההעברה.לאכ",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_10",
+      "number": "3.10",
+      "title": "שאריות מזון",
+      "category": "בריאות",
+      "text": "מזון שנשאר בתחום המטבח הראשי, יוכל לשמש להזנה במועד מאוחר, לא יותר מ48  שעות וישמר בקירור. מזון שהוכן בשיטת בשל-קרר ישמש לפי כללי השיטה. ר )אין לקררו ולחממו , לא יעשה בו שימוש חוזמזון שהוכן בשיטת \"בשל/הקפא\" וחומם מחדש להגשה( מזון שנשארו ממנו שאריות בחדרי אוכל, בעגלות הגשה ובמטבחים , לא יעשה בו שימוש חוזר, אלא יושמד. שאריות אלו כוללות גם מזון ארוז מראש כגון : מוצרי חלב, יחשבו כשאריות מזון ולא יעשה ריבות, דברי מתיקה וכו'. ברגע שחולקו למגשי חלוקה אישיים, בהם שימוש חוזר.",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11",
+      "number": "3.11",
+      "title": "העובדים",
+      "category": "בריאות",
+      "text": "העובדים",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_1_",
+      "number": "3.11.2.1.",
+      "title": "לבוש עובדים – בגדים נקיים ובהירים",
+      "category": "בריאות",
+      "text": "בגדים נקיים ובהירים, המשמשים לתכלית זו בלבד",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_2",
+      "number": "3.11.2.2",
+      "title": "החלפת בגדים לפחות פעם ביום",
+      "category": "בריאות",
+      "text": "חובה, לפחות פעם אחת ביום..  החלפת בגדים",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_3_",
+      "number": "3.11.2.3.",
+      "title": "כיסוי שיער",
+      "category": "בריאות",
+      "text": "שיער העובדים יהיה אסוף ומכוסה בכיסוי ראש",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_4_",
+      "number": "3.11.2.4.",
+      "title": "ציפורניים נקיים וללא ציפוי",
+      "category": "בריאות",
+      "text": "ציפורני העובדים יהיו נקיים וללא ציפוי כלשהו",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_5_",
+      "number": "3.11.2.5.",
+      "title": "איסור ענידת עדיים, למעט טבעת נישואין",
+      "category": "בריאות",
+      "text": "אין לענוד עדיים, למעט טבעת נישואין",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_6_",
+      "number": "3.11.2.6.",
+      "title": "ניקיון אישי ושטיפת ידיים",
+      "category": "בריאות",
+      "text": "קיימת הקפדה על ניקיון אישי ושטיפת ידיים במים וסבון, במעבר ממדור למדור ולאחר שימוש בשירותים.",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_7_",
+      "number": "3.11.2.7.",
+      "title": "אכילת מזון במקום ייעודי בלבד",
+      "category": "בריאות",
+      "text": "אכילת מזון תעשה במקום המיועד לכך בלבד",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_8_",
+      "number": "3.11.2.8.",
+      "title": "איסור שהות גורמים בלתי מורשים במטבח",
+      "category": "בריאות",
+      "text": "לא ימצא אדם שאינו עובד מטבח, בשטח המטבח",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_9_",
+      "number": "3.11.2.9.",
+      "title": "איסור עבודה עם מחלה מדבקת",
+      "category": "בריאות",
+      "text": "לא יעבוד עובד מטבח חולה במחלה מדבקת",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_10_",
+      "number": "3.11.2.10.",
+      "title": "איסור עבודה עם פצעים מוגלתיים ופתוחים",
+      "category": "בריאות",
+      "text": "לא יעבוד עובד מטבח עם פצעים מוגלתיים ופתוחים",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_11_",
+      "number": "3.11.2.11.",
+      "title": "חובת בדיקות רפואיות לפי דרישת המנהל",
+      "category": "בריאות",
+      "text": "לא יעבוד עובד מטבח, המסרב לעבור בדיקות רפואיות, על-פי דרישת  המנהל.",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_12_",
+      "number": "3.11.2.12.",
+      "title": "חובת המצאת תעודה רפואית לפי דרישת המנהל",
+      "category": "בריאות",
+      "text": "לא יעבוד עובד מטבח המסרב להמציא תעודה רפואית, על-פי דרישת  המנהל.",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_11_2_13_",
+      "number": "3.11.2.13.",
+      "title": "אין לעשן במטבח",
+      "category": "בריאות",
+      "text": "אין לעשן במטבח",
+      "bullets": [],
+      "citations": [ { "page": 27 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    }
+  ]
+}

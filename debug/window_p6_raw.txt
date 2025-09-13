@@ -1,0 +1,574 @@
+{
+  "rules": [
+    {
+      "id": "r_3_1",
+      "number": "3.1.",
+      "title": "הגדרות",
+      "category": "הגדרות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_1_1",
+      "number": "3.1.1.",
+      "title": "בעל העסק - המבקש להפעיל עסק",
+      "category": "הגדרות",
+      "text": "\"בעל העסק - המבקש להפעיל עסק, לרבות מנהל כאשר העסק הינו בבעלות תאגיד.",
+      "bullets": [],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_1_2",
+      "number": "3.1.2.",
+      "title": "שטח העסק - השטח ברוטו בעסק",
+      "category": "הגדרות",
+      "text": "\"שטח העסק - השטח ברוטו בעסק אליו יש גישה ללקוחות, כולל שטחי היציאות, ולא כולל שטחם של משרדים, מחסנים, מטבחים וכיו\"ב.",
+      "bullets": [],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_1_3",
+      "number": "3.1.3.",
+      "title": "קצין הרישוי - קצין הרישוי בגזרת תחנת המשטרה",
+      "category": "הגדרות",
+      "text": "\"קצין הרישוי - קצין הרישוי בגזרת תחנת המשטרה בה ממוקם העסק.",
+      "bullets": [],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_2",
+      "number": "3.2.",
+      "title": "הוראות נוספות",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_2_1",
+      "number": "3.2.1.",
+      "title": "משטרת ישראל תבצע בדיקה בדבר מידע פלילי ואחר",
+      "category": "משטרה",
+      "text": "משטרת ישראל תבצע בדיקה בדבר מידע פלילי ואחר של בעל העסק, מבקש הרישיון ובעלי תפקיד נוספים בעסק. תוצאות הבדיקה יכולות להוות עילה לפסילת הבקשה.",
+      "bullets": [],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_2_2",
+      "number": "3.2.2.",
+      "title": "עסק עד200 מקומות ישיבה ללא מכירה, הגשה וצריכה של משקאות משכרים פטור",
+      "category": "משטרה",
+      "text": "עסק עד200 מקומות ישיבה ללא מכירה, הגשה וצריכה של משקאות משכרים פטור מהדרישות המופיעות בפריט זה.",
+      "bullets": [],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [ { "text": "עד200 מקומות ישיבה", "value": 200, "hint": "max" } ],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": 200
+      },
+      "features": ["alcohol"],
+      "children": []
+    },
+    {
+      "id": "r_3_3",
+      "number": "3.3.",
+      "title": "מצלמות טלוויזיה במעגל סגור )טמ\"ס",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["cctv"],
+      "children": []
+    },
+    {
+      "id": "r_3_3_1",
+      "number": "3.3.1.",
+      "title": "כללי",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [
+        { "idx": 1, "text": "בעסק תותקן מערכת מצלמות טלוויזיה במעגל סגור )טמ\"ס( ברזולוציה של1.3 מגה פיקסל לפחות או שווה ערך." },
+        { "idx": 2, "text": "בכניסה לעסק וכן בקרבת האזורים המצולמים מחוץ לעסק ייתלה שלט המודיע כי האזור מצולם." },
+        { "idx": 3, "text": "המערכת תכלול גיבוי למקרה של הפסקת חשמל למשך חצי שעה לפחות, למערכת ההקלטה וספקי הכוח של מצלמות הטמ\"ס." }
+      ],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["cctv"],
+      "children": []
+    },
+    {
+      "id": "r_3_3_2",
+      "number": "3.3.2.",
+      "title": "מיקום המצלמות",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [
+        { "idx": 1, "text": "במבואת הכניסה באופן שתצלם כלפי חוץ לכיוון דלת הכניסה והקהל הנכנס" },
+        { "idx": 2, "text": "בקיר החיצוני של העסק באופן שתצלם את השטח שמחזית העסק כלפי חוץ עד למרחק של 0 1  מ" }
+      ],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["cctv"],
+      "children": []
+    },
+    {
+      "id": "r_3_3_3",
+      "number": "3.3.3.",
+      "title": "אופן הצילום",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [
+        { "idx": 1, "text": "יש להשתמש במצלמות בעלות חשיפה אוטומטית וצמצם אוטומטי" },
+        { "idx": 2, "text": "מערכת מצלמות הטמ\"ס תאפשר צילום בחשיכה" },
+        { "idx": 3, "text": "מהירות הצילום לא תהיה פחותה מ25 FPS ." },
+        { "idx": 4, "text": "המצלמות לא יכוונו ישירות למקור אור בהיר כגון חלונות וגופי תאורה" },
+        { "idx": 5, "text": "זיהוי תווי פנים של אדם.המצלמות בפתח הכניסה ובתוך העסק, יאפשרו" }
+      ],
+      "citations": [ { "page": 6 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["cctv"],
+      "children": []
+    },
+    {
+      "id": "r_3_3_4",
+      "number": "3.3.4.",
+      "title": "הקלטה",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [
+        { "idx": 1, "text": "ההקלטה תישמר למשך14 יום לפחות ממועד צילומה" },
+        { "idx": 2, "text": "ההקלטה תתבצע ברזולוציה של1.3 מגה פיקסל לפחות או שווה ערך" },
+        { "idx": 3, "text": "מערכת ההקלטה תאפשר הוצאת קבצים למדיה מגנטית נתיקהCD,DISK ON KEY  , DVD.(" },
+        { "idx": 4, "text": "למערכת ההקלטה יחובר מסך המאפשר צפייה בהקלטה" }
+      ],
+      "citations": [ { "page": 6 }, { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["cctv"],
+      "children": []
+    },
+    {
+      "id": "r_3_4",
+      "number": "3.4.",
+      "title": "תאורה",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_4_1",
+      "number": "3.4.1.",
+      "title": "תאורה מחוץ לעסק בשעות החשיכה",
+      "category": "משטרה",
+      "text": "בשעות החשיכה, תופעל מחוץ לעסק תאורה אשר תאיר את דרכי הגישה לעסק ואת היציאות ממנו.",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_4_2",
+      "number": "3.4.2.",
+      "title": "תקינות התאורה החיצונית",
+      "category": "משטרה",
+      "text": "התאורה החיצונית תהיה תקינה בכל עת",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_5",
+      "number": "3.5.",
+      "title": "אישור העסקת קטינים",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_5_1",
+      "number": "3.5.1.",
+      "title": "איסור העסקת קטינים במכירת משקאות משכרים",
+      "category": "משטרה",
+      "text": "לא יועסק במכירת משקאות משכרים מי שטרם מלאו לו18 שנים",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["alcohol"],
+      "children": []
+    },
+    {
+      "id": "r_3_6",
+      "number": "3.6.",
+      "title": "מכירת משקאות",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_6_1",
+      "number": "3.6.1.",
+      "title": "יידוע לציבור ואיסור מכירה למי שטרם מלאו לו 18",
+      "category": "משטרה",
+      "text": "יימכרו משקאות משכריםבעל העסק או מנהל העסק יודיע לציבור כי לא למי שטרם מלאו לו 18 שנים, ויציב שילוט שיוצג מעל פתחי הכניסה לבית העסק. לשון ההודעה תהיה כדלהלן מכירה או הגשה של משקאות משכרים למי שטרם מלאו לו 18 שנה - אסורה! עפ\"י סעיף 193 א' לחוק  העונשין, התשל\"ז 1977למי , \"מכירה או אספקה של משקה משכר שטרם מלאו לו 18, וכן עידוד אדם כאמור לצרוך משקה משכר - מהווים עבירה\"",
+      "bullets": [
+        { "idx": 1, "text": "המבקש לצרוך משקאות חייב להציג תעודה מזהה באמצעותה ניתן לוודא את גילו ." },
+        { "idx": 2, "text": "השלט יהיה עשוי מחומר קשיח, למעט קרטון, שמידותיו40*50 ס\"מ ." },
+        { "idx": 3, "text": "פסקה הראשונה להודעה האותיות בשלט יהיו בצבע שחור על רקע לבן, כאשר האותיות ב יהיו בגודל אחיד של 2.5*2.5 ס\"מ ." },
+        { "idx": 4, "text": "השלט ייקבע בגובה1.80 מטר עד2.20 מטר מהרצפה ויהיה גלוי לבאי המקום" },
+        { "idx": 5, "text": "השלט יותקן עם סידורי הארה בצדו ויואר בשעות החשיכה בכל עת שהעסק פתוח לציבור" }
+      ],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["alcohol"],
+      "children": []
+    },
+    {
+      "id": "r_3_6_2",
+      "number": "3.6.2.",
+      "title": "מכירה וצריכה באירועים – כוסות פלסטיק לא קשיח",
+      "category": "משטרה",
+      "text": "ה וצריכה של כל סוגי כאשר מדובר באירועים תחת כיפת השמיים או באירועים ארעיים, מכיר המשקאות )משכרים ושאינם משכרים( תהיה בכוסות פלסטיק לא קשיח בלבד.",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["alcohol"],
+      "children": []
+    },
+    {
+      "id": "r_3_7",
+      "number": "3.7.",
+      "title": "העברת כספים",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_7_1",
+      "number": "3.7.1.",
+      "title": "העברת כספים מהעסק",
+      "category": "משטרה",
+      "text": "העברת כספים מהעסק תתבצע כדלהלן",
+      "bullets": [
+        { "idx": 1, "text": "מ - 50,000 ועד בכלל - באמצעות בלדרות מאובטחת המחזיקה ברישיון עסק לפי פריט 8.3 א' בצו רישוי עסקים" }
+      ],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_8",
+      "number": "3.8.",
+      "title": "הקלות",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_8_1",
+      "number": "3.8.1.",
+      "title": "עסק עד200 מקומות ישיבה ללא מכירה, הגשה וצריכה של משקאות משכרים פטור",
+      "category": "משטרה",
+      "text": "עסק עד200 מקומות ישיבה ללא מכירה, הגשה וצריכה של משקאות משכרים פטור מהדרישות המופיעות בפריט זה.",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [ { "text": "עד200 מקומות ישיבה", "value": 200, "hint": "max" } ],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": 200
+      },
+      "features": ["alcohol"],
+      "children": []
+    },
+    {
+      "id": "r_3_9",
+      "number": "3.9.",
+      "title": "דיווחים, הצהרות ואחזקת מסמכים",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_3_9_1",
+      "number": "3.9.1.",
+      "title": "חובת אחזקת מידע ומסמכים",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [
+        { "idx": 1, "text": "נספח א - נתונים כלליים של העסק ) יירשם ע\"י בעל/מנהל העסק(." },
+        { "idx": 2, "text": "העובדים, רשימת מועסקים אשר תכלול את פרטיהם האישיים של העובדים בעסק: שמות מספרי תעודות הזהות שלהם, כתובות המגורים שלהם ודרכי תקשורת איתם." },
+        { "idx": 3, "text": "בעל העסק ישמור את ההקלטות מכל מצלמות הטמ\"ס כמפורט בפרק \"טמ\"ס\" לעיל" }
+      ],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["cctv"],
+      "children": []
+    },
+    {
+      "id": "r_3_10",
+      "number": "3.10.",
+      "title": "מסירת תנאים",
+      "category": "משטרה",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 7 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    }
+  ]
+}

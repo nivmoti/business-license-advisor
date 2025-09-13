@@ -1,0 +1,924 @@
+{
+  "rules": [
+    {
+      "id": "r_8_",
+      "number": "8.",
+      "title": "מכלי השרייה",
+      "category": "בריאות",
+      "text": "תהליך בסיסי בהחלפת חומר ההשריה",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_9_",
+      "number": "9.",
+      "title": "מכלי אשפה",
+      "category": "בריאות",
+      "text": "התזה במים ולחץ, או קרצוף ידני עם מים ושטיפה עם חומר חיטוי בהחלפת שקית פסולת )נפח 1 אקונומיקה ל100 נפחים מים( לאחר כל ריקון",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_10_",
+      "number": "10.",
+      "title": "סרט נע במרכז לחלוקת מזון מוכן",
+      "category": "בריאות",
+      "text": "ניתוק ממערכת החשמל ניקוי עם מטלית ובהתאם לצורך עם חומר מסיר שומן; אין להשתמש במים זורמים לאחר כל ארוחה",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_11_",
+      "number": "11.",
+      "title": "מתקן להדחת כלים",
+      "category": "בריאות",
+      "text": "א. המדיח תעשייתי התזת מים )בלחץ( עם דטרגנט ב. במדיח ביתי הוצאת הרשתות והמסננות וניקוי בסיסי אחרי כל ארוחה",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_12_",
+      "number": "12.",
+      "title": "תבניות",
+      "category": "בריאות",
+      "text": "תהליך בסיסי לאחר כל שימוש",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_14_",
+      "number": "14.",
+      "title": "טרמופורטים",
+      "category": "בריאות",
+      "text": "תהליך בסיסי לאחר כל שימוש",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_15_",
+      "number": "15.",
+      "title": "גסטרונומים",
+      "category": "בריאות",
+      "text": "תהליך בסיסי לאחר כל שימוש",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_16_",
+      "number": "16.",
+      "title": "מיקסרים ניידים",
+      "category": "בריאות",
+      "text": "תהליך בסיסי לאחר כל שימוש",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_17_",
+      "number": "17.",
+      "title": "עגלות שירות",
+      "category": "בריאות",
+      "text": "תהליך בסיסי לאחר כל שימוש",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_18_",
+      "number": "18.",
+      "title": "לוחות חיתוך",
+      "category": "בריאות",
+      "text": "תהליך בסיסי לאחר כל שימוש",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_19_",
+      "number": "19.",
+      "title": "כלים לרג'יטרמיק",
+      "category": "בריאות",
+      "text": "תהליך בסיסי לאחר כל שימוש",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_20_",
+      "number": "20.",
+      "title": "כלים למיניהם",
+      "category": "בריאות",
+      "text": "תהליך בסיסי לאחר כל שימוש",
+      "bullets": [],
+      "citations": [ { "page": 31 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1",
+      "number": "8.1",
+      "title": "כללים לתחזוקת המטבח",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_1_",
+      "number": "8.1.1.",
+      "title": "ציוד מטבח וכלי אוכל יש להחליף ברגע שמתגלה פגם",
+      "category": "בריאות",
+      "text": "ציוד מטבח וכלי אוכל יש להחליף ברגע שמתגלה פגם",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_2_",
+      "number": "8.1.2.",
+      "title": "אין להשאיר ציוד וכלים מזוהמים ליום שאחרי",
+      "category": "בריאות",
+      "text": "אין להשאיר ציוד וכלים מזוהמים ליום שאחרי, אלא יש לנקותם עם סיום העבודה",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_3",
+      "number": "8.1.3",
+      "title": "אופן הניקוי ותדירותו  לכל פריט או שטח..",
+      "category": "בריאות",
+      "text": "אופן הניקוי ותדירותו  לכל פריט או שטח..  יש להקפיד על התאמת",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_4_",
+      "number": "8.1.4.",
+      "title": "אין לטאטא בקרבת מזון לא מוגן",
+      "category": "בריאות",
+      "text": "אין לטאטא בקרבת מזון לא מוגן",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_5_",
+      "number": "8.1.5.",
+      "title": "יש לבצע ביקורת עצמית לעיתים קרובות",
+      "category": "בריאות",
+      "text": "יש לבצע ביקורת עצמית לעיתים קרובות ולתקן מיד את כל הטעון תיקון",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_6_",
+      "number": "8.1.6.",
+      "title": "ש להקפיד, שמכל האשפה במטבח יהיה נקי ותקין",
+      "category": "בריאות",
+      "text": "ש להקפיד, שמכל האשפה במטבח יהיה נקי ותקין",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_7_",
+      "number": "8.1.7.",
+      "title": "יש לרוקן את מכל האשפה",
+      "category": "בריאות",
+      "text": "יש לרוקן את  מכל האשפה למכלי אשפה בחצר",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_8",
+      "number": "8.1.8",
+      "title": "תמש בשקיות ניילון לאשפה..",
+      "category": "בריאות",
+      "text": "תמש בשקיות ניילון לאשפה.. יש להש",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_9_",
+      "number": "8.1.9.",
+      "title": "על המדפים להיות מסודרים ונקיים",
+      "category": "בריאות",
+      "text": "על המדפים להיות מסודרים ונקיים והמזון עטוף בניילון,סגור בצנצנת, או מוגן ברשת",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_1_10_",
+      "number": "8.1.10.",
+      "title": "אין להשאיר מזון בחוץ למשך שעות הלילה",
+      "category": "בריאות",
+      "text": "אין להשאיר מזון בחוץ למשך שעות הלילה",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2",
+      "number": "8.2",
+      "title": "כללים לתחזוקת מחסני מזון",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2_1_",
+      "number": "8.2.1.",
+      "title": "יש לדאוג לאוורור, צינון ותאורה מלאכותית חזקה",
+      "category": "בריאות",
+      "text": "יש לדאוג לאוורור, צינון ותאורה מלאכותית חזקה",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2_2_",
+      "number": "8.2.2.",
+      "title": "צורת האחסון הנדרשת",
+      "category": "בריאות",
+      "text": "צורת האחסון הנדרשת: רצפה פנויה מקיר אל קיר, גובה מדפי האחסון יעלה על30  ס\"מ",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2_3_",
+      "number": "8.2.3.",
+      "title": "מדפים קלים לניקוי",
+      "category": "בריאות",
+      "text": "מדפים קלים לניקוי, רווח בין המוצרים שעל המדפים",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2_4_",
+      "number": "8.2.4.",
+      "title": "יש לשמור על מעבר אוויר בין הקיר למדפים",
+      "category": "בריאות",
+      "text": "יש  לשמור על מעבר אוויר בין הקיר למדפים",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2_5_",
+      "number": "8.2.5.",
+      "title": "על המחסן להיות בנוי מבניה קשיחה",
+      "category": "בריאות",
+      "text": "על המחסן להיות בנוי מבניה קשיחה )לבנים, בטון",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2_6",
+      "number": "8.2.6",
+      "title": "דאוג לתחלופה נכונה של מוצרים",
+      "category": "בריאות",
+      "text": "דאוג לתחלופה נכונה של מוצרים ,בהתאם לכלל \"ראשון נכנס .  יש ל –ראשון יוצא\".",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2_7_",
+      "number": "8.2.7.",
+      "title": "יש לערוך ביקורת שוטפת",
+      "category": "בריאות",
+      "text": "יש לערוך ביקורת שוטפת ,על מנת לעמוד על טיב המצרכים ולמנוע קינון מזיקים",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_2_8_",
+      "number": "8.2.8.",
+      "title": "יש לשטוף את המחסן באופן קבוע",
+      "category": "בריאות",
+      "text": "יש לשטוף את המחסן באופן קבוע",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3",
+      "number": "8.3",
+      "title": "כללים לתחזוקה כללית וסילוק הפסולת",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_1",
+      "number": "8.3.1",
+      "title": "סן במקום נפרד.. חומרי ניקיון וחיטוי יש לאח",
+      "category": "בריאות",
+      "text": "סן במקום נפרד.. חומרי ניקיון וחיטוי יש לאח",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_2_",
+      "number": "8.3.2.",
+      "title": "יש לשמור על חומרים אלו באריזות מקוריות",
+      "category": "בריאות",
+      "text": "יש לשמור על חומרים אלו באריזות מקוריות ,שתוכנן מסומן באופן ברור",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_3_",
+      "number": "8.3.3.",
+      "title": "יש לשמור על חומרים אלו במקום נעול",
+      "category": "בריאות",
+      "text": "יש לשמור על חומרים אלו במקום נעול, כשהמפתח נמצא בידי האחראי על המטבח",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_4_",
+      "number": "8.3.4.",
+      "title": "לגבי תחזוקת המבנים יש להקפיד על תיקון המבנה",
+      "category": "בריאות",
+      "text": "לגבי תחזוקת המבנים יש להקפיד על תיקון המבנה מיד עם גילוי הפגם",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_5_",
+      "number": "8.3.5.",
+      "title": "יש לתקן צנרת עם גילוי דליפה או פגם",
+      "category": "בריאות",
+      "text": "יש לתקן צנרת עם גילוי דליפה או פגם",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_6_",
+      "number": "8.3.6.",
+      "title": "יש לשמור על הסדר והניקיון בחצר ובסביבת העסק",
+      "category": "בריאות",
+      "text": "יש לשמור על הסדר והניקיון בחצר ובסביבת העסק",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_7_",
+      "number": "8.3.7.",
+      "title": "יש להקפיד, שלא ימצאו פחי אשפה",
+      "category": "בריאות",
+      "text": "יש להקפיד, שלא ימצאו פחי אשפה ,שהזבל נשפך מהם לצדדים",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_8_",
+      "number": "8.3.8.",
+      "title": "יש לאסוף את האשפה לפחות פעמיים בשבוע",
+      "category": "בריאות",
+      "text": "יש לאסוף את האשפה לפחות פעמיים בשבוע",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_3_9_",
+      "number": "8.3.9.",
+      "title": "על מכל האשפה לעמוד על עגלה עם גלגלים",
+      "category": "בריאות",
+      "text": "על מכל האשפה לעמוד על עגלה עם גלגלים, על משטח בטון מנוקז עם ברז מים",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_4",
+      "number": "8.4",
+      "title": "כללים לתחזוקת השירותים",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_4_1",
+      "number": "8.4.1",
+      "title": "יש להחזיק את השירותים בתנאים סניטרים",
+      "category": "בריאות",
+      "text": "יש להחזיק את השירותים בתנאים סניטרים",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_4_2_",
+      "number": "8.4.2.",
+      "title": "יש לתקן כל פגם מיד לאחר גילויו",
+      "category": "בריאות",
+      "text": "יש לתקן כל פגם מיד לאחר גילויו",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_8_4_3_",
+      "number": "8.4.3.",
+      "title": "ניקוי השירותים ייעשה מספר פעמים ביום",
+      "category": "בריאות",
+      "text": "ניקוי השירותים ייעשה מספר פעמים ביום. יש לנקות קירות, רצפות ומתקני השטיפה.",
+      "bullets": [],
+      "citations": [ { "page": 32 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "rules": [
+    {
+      "id": "r_6_2_9",
+      "number": "6.2.9",
+      "title": "חומר לא דליק",
+      "category": "הגדרות",
+      "text": "חומר לא דליק - כמשמעותו בתקן ישראלי ת\"י 755, סיווג בשרפה של מוצרי בנייה ואלמנטי בניין  - שיטות בדיקה וסיווג לפי תוצאות הבדיקה.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_10",
+      "number": "6.2.10",
+      "title": "חומר ציפוי וגימור",
+      "category": "הגדרות",
+      "text": "חומר ציפוי וגימור - חומר המשמש לציפוי, כיסוי או חיפוי, לרבות: טפטים, ציפוי עץ, שטחים, פרקט, תקרות עץ, בד או PVC.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_11",
+      "number": "6.2.11",
+      "title": "חוק הרשות הארצית לכבאות והצלה",
+      "category": "הגדרות",
+      "text": "חוק הרשות הארצית לכבאות והצלה- חוק הרשות הארצית לכבאות והצלה, התשע\"ב-2012.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_12",
+      "number": "6.2.12",
+      "title": "חוק התקנים",
+      "category": "הגדרות",
+      "text": "חוק התקנים- חוק התקנים, התשי\"ג1953.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_13",
+      "number": "6.2.13",
+      "title": "ידית בהלה",
+      "category": "הגדרות",
+      "text": "ידית בהלה- דלת בעלת מנגנון בהלה המקיים את הדרישות המנויות בסעיף 3.2.1.21)ב לחלק ג' לתקנות התכנון והבנייה.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_14",
+      "number": "6.2.14",
+      "title": "יציאה )Exit Discharge(",
+      "category": "הגדרות",
+      "text": "יציאה )Exit Discharge( -  וצא בטוח או חלק מדרך מוצא שתחילתו בסופה של גישה למ בסופו של מוצא בטוח וסיומו ברחוב, בין במישרין ובין דרך שטח פתוח.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_15",
+      "number": "6.2.15",
+      "title": "מהנדס",
+      "category": "הגדרות",
+      "text": "מהנדס - מהנדס רשום כמשמעותו בחוק המהנדסים והאדריכלים, התשי\"ח1958, אשר עוסק בתחום ובסוג בדיקות שלגביהם נדרש האישור.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_16",
+      "number": "6.2.16",
+      "title": "מוצא בטוח)Exit(",
+      "category": "הגדרות",
+      "text": "מוצא בטוח)Exit( - חלק מדרך מוצא, המופרד משאר חלקי העסק על-למנטים עמידי ידי א אש ודלתות אש, והמוביל אל היציאה או אל מחוץ לעסק.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_17",
+      "number": "6.2.17",
+      "title": "נותן אישור",
+      "category": "הגדרות",
+      "text": "נותן אישור- עובד רשות הכבאות וההצלהידי השר לביטחון פנים., שהוסמך לכך על",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_18",
+      "number": "6.2.18",
+      "title": "ציוד כיבוי",
+      "category": "הגדרות",
+      "text": "ציוד כיבוי- ציוד, מתקנים וחומרים המשמשים לכיבוי דליקות ולמניעתן .",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_19",
+      "number": "6.2.19",
+      "title": "רשות הכבאות והצלה",
+      "category": "הגדרות",
+      "text": "רשות הכבאות והצלה- הארצית לכבאות והצלה שהוקמה בחוק הרשות הארצית הרשות לכבאות והצלה, התשע\"ב2012.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_20",
+      "number": "6.2.20",
+      "title": "תעודת בדיקה",
+      "category": "הגדרות",
+      "text": "תעודת בדיקה- תעודת בדיקה בדבר התאמה לתקן שניתנה לפי סעיף 12 לחוק התקנים",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_21",
+      "number": "6.2.21",
+      "title": "תקן ישראלי )ת\"י",
+      "category": "הגדרות",
+      "text": "תקן ישראלי )ת\"י- תקן ישראלי רשמי או תקן ישראלי כמשמעותו בחוק התקנים.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_2_22",
+      "number": "6.2.22",
+      "title": "תקנות התכנון והבנייה",
+      "category": "הגדרות",
+      "text": "תקנות התכנון והבנייה- והבנייה )בקשה להיתר, תנאיו ואגרות(, התש\"לתקנות התכנון - 1970.",
+      "bullets": [],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_3_1",
+      "number": "6.3.1",
+      "title": "מסמכים לבקשת רישיון עסק",
+      "category": "כבאות",
+      "text": "לבקשת רישיון עסק או להיתר זמני )להלן - בקשה( יצורפו המסמכים המנויים להלן:",
+      "bullets": [
+        {
+          "idx": 1,
+          "text": "אפיון רשת המים המזינה את העסק לפי הטופס שבנספח \"בדיקת אופיין רשת מים למבנה על פי נוהל 529\", שנחתם על-ידי אחד מאלה: (א) מהנדס. (ב) הנדסאי. (ג) גורם מוסמך."
+        },
+        {
+          "idx": 2,
+          "text": "נספח תיאור אמצעים לבטיחות אש, כאמור בתקנה 11א לתקנות התכנון והבנייה דרישה זו לא תחול על עסק ששטחו הכולל אינו עולה על 100 מ\"ר, ושאינו מיועד להכיל מעל 50 איש או לאחסון חומרים מסוכנים. ניתן להגיש העתק מנספח תיאור אמצעים ה לבקשה להיתר בנייה, ובלבד שיצורפו אליו כל אלה: לבטיחות אש שצורפ (א) העתק מהיתר הבנייה. (ב) הצהרה בחתימת ידו של המבקש, לפיה לא נעשה שינוי פנימי או שינוי בשימוש של הבניין המשמש את העסק, כולו או מקצתו, מיום הכנת הנספח האמור."
+        }
+      ],
+      "citations": [
+        { "page": 51 }
+      ],
+      "conditions": {
+        "area_ctx": [
+          { "text": "ששטחו הכולל אינו עולה על 100 מ\"ר", "value": 100, "hint": "max" }
+        ],
+        "seats_ctx": [
+          { "text": "שאינו מיועד להכיל מעל 50 איש", "value": 50, "hint": "max" }
+        ],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": 100,
+        "min_seats": null,
+        "max_seats": 50
+      },
+      "features": ["water"],
+      "children": []
+    },
+    {
+      "id": "r_6_4_1",
+      "number": "6.4.1",
+      "title": "הודעה על ניתוק מערכות כיבוי אש",
+      "category": "כבאות",
+      "text": "יזום של מערכות כיבוי אש על ידו, וזאת בעל העסק יודיע לנותן האישור על כוונה לניתוק לכל הפחות שבעה ימים לפני היום שבו מתוכנן הניתוק; לעניין סעיף זה, \"מערכת כיבוי אש\"  - אחת מהמערכות הבאות, אם מתקיימת לגביה חובה להתקינה על-פי דין: גלאים, מתיזים, גנרטור, מערכת על לחץ ושחרור עשן.",
+      "bullets": [],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_4_2",
+      "number": "6.4.2",
+      "title": "הודעה על הפסקת פעולה של מערכת כיבוי אש",
+      "category": "כבאות",
+      "text": "בעל העסק יודיע לנותן האישו ר באופן מידי בכל פעם שאחת ממערכות כיבוי אש חדלה מלפעול.",
+      "bullets": [],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_5_1",
+      "number": "6.5.1",
+      "title": "הפעלת עסק עם אמצעי בטיחות אש והצלה",
+      "category": "כבאות",
+      "text": "בעל העסק יפעיל את העסק תוך נקיטה והתקנת אמצעי בטיחות אש והצלה ההולמים את היקף הפעילות בעסק, רמת הסיכון הנובעת מאופי הפעילות בעסק, ממספר השוהים בו, ממיקומו, משטחו ועל פי כל דין.",
+      "bullets": [],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_5_2",
+      "number": "6.5.2",
+      "title": "אי גריעה מדרישות דין",
+      "category": "כבאות",
+      "text": "עות במפרט זה כדי לגרוע מהדרישות הקבועות על פי כל דין, לרבות אין בדרישות המופי דיני התכנון והבנייה.",
+      "bullets": [],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_5_3",
+      "number": "6.5.3",
+      "title": "הוראות נוספות לתקנות התכנון והבנייה",
+      "category": "כבאות",
+      "text": "מבלי לגרוע מכלליות האמור בסעיפים6.1.1 ו6.5.2, אין בהוראות מפרט זה כדי לגרוע מהדרישות הקבועות בתקנות התכנון והבנייה לצורך קבלת היתר בנייה, כפי שחלו במועד תר בנייה, ובכל מקום שבו ישנה התייחסות במפרט לדרישות שבו הוגשה הבקשה להי הנוגעות לבטיחות אש בעסק, הן תבואנה בנוסף לדרישות תקנות אלו.",
+      "bullets": [],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_5_4",
+      "number": "6.5.4",
+      "title": "התאמה לתקן ישראלי",
+      "category": "כבאות",
+      "text": "הפניות במפרט לתקן ישראלי מחייבות ,כי תתקיים התאמה מלאה בין מבנה העסק תכולתו מי מטעמו ובעל העסק, או , ה בו, ובין דרישות הקבועות בתקןואמצעי בטיחות אש והצל שמונה לעסוק בתחום זה, מחויב להכיר את דרישות התקן, ולוודא כי תתקיים התאמה מלאה של העסק כנדרש.",
+      "bullets": [],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_5_5",
+      "number": "6.5.5",
+      "title": "קיום הדרישות לאורך תקופת הפעילות",
+      "category": "כבאות",
+      "text": "הדרישות המופיעות במפרט תקוימנה לכל אורך תקופת פעילותו של העסק, ובעל העסק אחראי לכך שלא יתבצעו כל שינויים שהם בעסק העומדים בסתירה להוראות המפרט יון.ולתנאי הריש",
+      "bullets": [],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_5_6",
+      "number": "6.5.6",
+      "title": "תחזוקת אמצעי בטיחות אש והצלה",
+      "category": "כבאות",
+      "text": "תחזוקת אמצעי בטיחות אש והצלה",
+      "bullets": [
+        {
+          "idx": 1,
+          "text": "אמצעי בטיחות אש והצלה יימצאו במצב תקין בכל עת, ובעל רישיון העסק יוודא את ביצוען של הבדיקות, הטיפולים וכל פעולה אחרת הנדרשת לצורך כך )להלן  - תחזוקת אמצעי כיבוי אש והצלה(."
+        },
+        {
+          "idx": 2,
+          "text": "תחזוקת אמצעי כיבוי אש והצלה תתבצע לפי הוראות התקן הישראלי התקף והוראות היצרן, ואם ניתנו הוראות נוספות על-ידי נותן האישור, בהתאם להוראות אלו."
+        }
+      ],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_6_1",
+      "number": "6.6.1",
+      "title": "דרכי גישה לעסק לצורכי כיבוי והצלה",
+      "category": "כבאות",
+      "text": "בעל העסק יבטיח את קיומן של דרכי גישה לעסק לצורך פעילות כיבוי והצלה.",
+      "bullets": [],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_6_7_1",
+      "number": "6.7.1",
+      "title": "הפרדת אש ועשן בעסק",
+      "category": "כבאות",
+      "text": "בעסק תהיה הפרדת אש ועשן בין שטח המשמש לאחסנה לבין שאר חלקי העסק, וכן בין העסק לשאר חלקי הבניין האחרים. ההפרדה האמורה תבוצע באמצעות:",
+      "bullets": [
+        {
+          "idx": 1,
+          "text": "קירות בעלי עמידות אש למשך שעתיים לפחות. הקיר יהיה בנוי מלבנים או מבלוקים או מבטון."
+        }
+      ],
+      "citations": [
+        { "page": 52 }
+      ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    }
+  ]
+}

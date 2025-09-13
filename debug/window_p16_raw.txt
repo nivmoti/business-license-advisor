@@ -1,0 +1,644 @@
+{
+  "rules": [
+    {
+      "id": "r_1",
+      "number": "1",
+      "title": "מקור רכישת המזון, הובלתו וקבלתו במטבח",
+      "category": "בריאות",
+      "text": "ברכישת מזון, חייבים להקפיד על מספר כללים, שהשמירה עליהם תבטיח שהמזון אשר יגיע למטבח לא יהיה מזוהם או פגום טרם כניסתו.",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_1",
+      "number": "1.1",
+      "title": "רכישת המזון מעסק בעל רישיון",
+      "category": "בריאות",
+      "text": "רכישת המזון תיעשה מעסק בעל רישיון יצרן ורישיון עסק בר תוקף על מוצרי המזון לשאת סימון נכון הכולל את שם היצרן, כתובתו המלאה, ההרכב התזונתי של המוצר, משקלו ותאריך אחרון לשיווק.",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_2",
+      "number": "1.2",
+      "title": "פיקוח וטרינרי למזון מן החי",
+      "category": "בריאות",
+      "text": "לגבי מזון מן החי.. פיקוח וטרינרי מלא",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_3",
+      "number": "1.3",
+      "title": "שירות להחלפת מוצר פגום",
+      "category": "בריאות",
+      "text": "שירות להחלפת מוצר פגום",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_4",
+      "number": "1.4",
+      "title": "הקפדה על טמפרטורת המזון המתקבל",
+      "category": "בריאות",
+      "text": "יש להקפיד על טמפרטורת המזון המתקבל: של המזון הקפוא, המצונן או החם",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold", "food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_1_5",
+      "number": "1.5",
+      "title": "מזונות רגישים לגידול חיידקים",
+      "category": "בריאות",
+      "text": "מוצרים כגון בשר מבושל עם רוטב, סלטים עם רוטב, חומוס ומוצרי קונדיטוריה עם קרמים חיידקים )על כן מוצר אמין הוא כזה הנשמר מהווים קרקע מזון רגישה במיוחד לגידול והתרבות בקירור בעת הרכישה(.",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_6",
+      "number": "1.6",
+      "title": "ביצי מאכל שלמות וללא סדקים",
+      "category": "בריאות",
+      "text": "ביצים צריכות להיות ביצי מאכל בלבד, שלמות וללא סדקים",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7",
+      "number": "1.7",
+      "title": "פירוט הדרישות הנוגעות למקור המזון",
+      "category": "בריאות",
+      "text": "פירוט הדרישות  הנוגעות למקור המזון",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_1",
+      "number": "1.7.1",
+      "title": "מקור חומרי הגלם ומוצרי המזון",
+      "category": "בריאות",
+      "text": "מקור חומרי הגלם ומוצרי המזון צריכים להיות מעסק בעלי רישיון יצרן ורישיון עסק ואישור יבוא בתוקף )כאשר רלוונטי( עם עדיפות למפעלים בעלי אישור G.M.P.) .good manufacturing practice.(",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_2",
+      "number": "1.7.2",
+      "title": "אספקת בשר, עופות ודגים",
+      "category": "בריאות",
+      "text": "אספקת  בשר, עופות ודגים תהיה ממקור בעל רישיון יצרן לבשר ולדגים תהיה כל תעודה וטרינרית הנדרשת על-ות משנה כנדרש פי כל דין, והם יבדקו בבדיק על-פי כל דין:",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_2_1",
+      "number": "1.7.2.1",
+      "title": "חומר הגלם — מקור ורישוי",
+      "category": "בריאות",
+      "text": "חומר הגלם יתקבל מעסק בעל רישיון עסק וייוצר במפעל בעל רישיון יצרן בר תוקף.",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_2_2",
+      "number": "1.7.2.2",
+      "title": "ליווי בתעודות וטרינריות",
+      "category": "בריאות",
+      "text": "בשר, דגים, עוף יגיעו בלווי תעודות וטרינריות",
+      "bullets": [],
+      "citations": [ { "page": 16 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_2_3",
+      "number": "1.7.2.3",
+      "title": "דגים לאכילה ללא טיפול תרמי מלא",
+      "category": "בריאות",
+      "text": "דג המיועד לאכילה ללא טיפול תרמי מלא יגיע לבית האוכל כשהוא ארוז ומסומן על גביו \"מיועד לאכילה ללא טיפול תרמי מלא\"; בית האוכל ירכוש דגים אלו רק ממפעל בעל תוכנית אבטחת בטיחות מאושרת כגון GMP;",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_2_4",
+      "number": "1.7.2.4",
+      "title": "בדיקת טמפרטורות בעת קבלת אספקה",
+      "category": "בריאות",
+      "text": "ש לבדוק אצל המוביל עמידה בטמפרטורות עם קבלת האספקה, י המפורטות, יש לרשום את הטמפרטורה בזמן הגעת הסחורה )בהנחיות יצוין שיש לשמרן כחודש לפחות(. אין לקבל מזון שאינו בטמפרטורה המומלצת לאחסונו.",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_2_5",
+      "number": "1.7.2.5",
+      "title": "הובלת בשר, עופות ודגים בהתאם לתקנות",
+      "category": "בריאות",
+      "text": "שוי עסקים הובלת בשר, עופות ודגים לעסק תהיה בהתאם לתקנות רי תנאים תברואיים להובלת בשר, דגים, עופות ומוצריהם(, התשל\"ב1971;",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_3",
+      "number": "1.7.3",
+      "title": "ביצים — מיון ורישוי",
+      "category": "בריאות",
+      "text": "הביצים צריכות להיות ביצי מאכל בלבד )ביצי תרנגולת( אשר מוינו בתחנת מיון בעלת רשיון עסק לפי החוק ומצורפת להן תעודת משלוח לפי כללי המועצה רת ייצור, מיון ושיווק(, התשכ\"ח לענף הלול )הסד1968.",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_4",
+      "number": "1.7.4",
+      "title": "מזון מוכן להגשה — רישוי",
+      "category": "בריאות",
+      "text": "מזון המגיע מוכן להגשה צריך להיות ממפעל בעל רישיון עסק ורישיון יצרן בתוקף.",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_5",
+      "number": "1.7.5",
+      "title": "חיי מדף בתוקף",
+      "category": "בריאות",
+      "text": "המזונות צריכים להיות עם חיי מדף בתוקף",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_6",
+      "number": "1.7.6",
+      "title": "קופסאות שימורים במצב תקין",
+      "category": "בריאות",
+      "text": "קופסאות שימורים צריכות להיות במצב תקין; הקופסאות לא יראו סימני חלודה נזילה או נפיחות.",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_7_7",
+      "number": "1.7.7",
+      "title": "טמפרטורת המזון המתקבל",
+      "category": "בריאות",
+      "text": "טמפרטורת המזון המתקבל",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold", "food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_1_7_7_1",
+      "number": "1.7.7.1",
+      "title": "מזון קפוא — לא תעלה על מינוס18°C",
+      "category": "בריאות",
+      "text": "מזון קפוא יגיע במצב קפוא וטמפרטורת המזון לא תעלה על מינוס18 מעלות צלזיוס.",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "לא תעלה על מינוס18 מעלות צלזיוס", "value": -18, "hint": "max" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_1_7_7_2",
+      "number": "1.7.7.2",
+      "title": "מזון מצונן — לא תעלה על 5°C",
+      "category": "בריאות",
+      "text": "מזון מצונן יגיע בטמפרטורה שלא תעלה על5+ מעלות צלזיוס",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "שלא תעלה על5+ מעלות צלזיוס", "value": 5, "hint": "max" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold"],
+      "children": []
+    },
+    {
+      "id": "r_1_7_7_3",
+      "number": "1.7.7.3",
+      "title": "מזון חם — מינימום 65°C",
+      "category": "בריאות",
+      "text": "מזון חם יגיע בטמפרטורה של מינימום 65 + מעלות צלזיוס",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [ { "text": "מינימום 65 + מעלות צלזיוס", "value": 65, "hint": "min" } ],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_1_8",
+      "number": "1.8",
+      "title": "אחריות להזמנה, קבלה ובקרה",
+      "category": "בריאות",
+      "text": "הזמנה, קבלה, רישום, בדיקה ופסילת המזון תעשה על-ידי אדם אחראי ומיומן; אדם זה ידרוש מהספק לעמוד בדרישות החוק.",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_9",
+      "number": "1.9",
+      "title": "ליווי המשלוח במסמכי מקור",
+      "category": "בריאות",
+      "text": "המשלוח צריך להיות מלווה במסמכים המעידים על מקור המזון",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_10",
+      "number": "1.10",
+      "title": "הובלת מזון",
+      "category": "בריאות",
+      "text": "",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_10_1",
+      "number": "1.10.1",
+      "title": "רכב הובלת מזון — רישוי ותקן ת\"י 1291",
+      "category": "בריאות",
+      "text": "יש לבדוק שהרכב המוביל את המזון, יהיה בעל רישיון עסק בתוקף ויעמוד בת\"י1291 – רכב להובלת מזון בטמפרטורה מבוקרת )סעיפים רשמיים על הרכב להיות מותאם לסוג המזון – אותו הוא מוביל: לחם, מוצרי חלב, ביצים, מזון חם מזון קפוא, סלטים עם רוטב או מוצרי קונדיטוריה וכדומה.",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": ["food_cold", "food_hot"],
+      "children": []
+    },
+    {
+      "id": "r_1_10_2",
+      "number": "1.10.2",
+      "title": "בדיקות בקבלת מזון מהרכב",
+      "category": "בריאות",
+      "text": "על האחראי על הקבלה לבדוק את מצב ניקיון ארגז הרכב, המשמש להובלת מזון, שלמות האריזות, תקינותן, תאריכי תפוגת שוו ק המזון והטמפרטורה בתוך חלל הרכב ובמזון.",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_10_3",
+      "number": "1.10.3",
+      "title": "טופס ביקורת",
+      "category": "בריאות",
+      "text": "מומלץ להכין טופס ביקורת לפי הסעיפים הנ\"ל",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_11",
+      "number": "1.11",
+      "title": "בדיקת הרכב להובלת המזון",
+      "category": "בריאות",
+      "text": "בדיקת הרכב להובלת המזון",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_11_1",
+      "number": "1.11.1",
+      "title": "רכב להובלת מזון — רישיון עסק",
+      "category": "בריאות",
+      "text": "רכב להובלת מזון יהיה בעל רישיון עסק",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    },
+    {
+      "id": "r_1_11_2",
+      "number": "1.11.2",
+      "title": "רכב הובלות מזון מן החי — רישוי ודרישות",
+      "category": "בריאות",
+      "text": "רכב ההובלות של מזון מן החי, יהיה בעל רישיון עסק בתוקף ויעמוד בדרישת",
+      "bullets": [],
+      "citations": [ { "page": 17 } ],
+      "conditions": {
+        "area_ctx": [],
+        "seats_ctx": [],
+        "temps_c_ctx": [],
+        "min_area_m2": null,
+        "max_area_m2": null,
+        "min_seats": null,
+        "max_seats": null
+      },
+      "features": [],
+      "children": []
+    }
+  ]
+}
