@@ -146,6 +146,8 @@ Response (truncated):
 }
 ```
 
+for test the API you can use Postman and import the Json file from "test".
+
 ---
 
 ## 🧠 AI Usage & Key Prompts
