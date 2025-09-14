@@ -446,7 +446,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--pdf", required=True, help="Path to the PDF (Hebrew)")
     ap.add_argument("--out_dir", required=True, help="Output directory for JSON files")
-    ap.add_argument("--model", default="gpt-4o-mini", help="OpenAI chat model")
+    ap.add_argument("--model", default="gpt-5-mini", help="OpenAI chat model")
     ap.add_argument("--window_pages", type=int, default=2, help="Pages per window")
     ap.add_argument("--stride", type=int, default=1, help="Stride between windows")
     ap.add_argument("--max_pages", type=int, default=0, help="Limit pages for quick runs (0=no limit)")

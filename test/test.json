@@ -1,0 +1,186 @@
+{
+  "info": {
+    "name": "Business License Advisor API",
+    "_postman_id": "d9c8f3a5-3b59-4a0d-9a80-1e8c2b8f3a01",
+    "description": "Collection for testing the Business License Advisor FastAPI server.\nIncludes /health and /report endpoints with sample bodies and tests.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/health",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "health"
+          ]
+        },
+        "description": "Checks server startup, rule loading and feature index presence."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is 200\", function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test(\"Response has ok=true\", function () {",
+              "  var json = pm.response.json();",
+              "  pm.expect(json.ok).to.eql(true);",
+              "});",
+              "",
+              "pm.test(\"Rules loaded > 0\", function () {",
+              "  var json = pm.response.json();",
+              "  pm.expect(json.rules_loaded).to.be.above(0);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Report (debug on)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"size_m2\": 120,\n  \"seats\": 80,\n  \"features_text\": \"בלוני גז, טיגון צ'יפס, אין אלכוהול, מצלמות אבטחה\",\n  \"top_n_rules\": 60,\n  \"debug\": true\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/report",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "report"
+          ]
+        },
+        "description": "Generates a report with debug info (semantic feature matches + sample of selected rules)."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is 200\", function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test(\"Has report text\", function () {",
+              "  var json = pm.response.json();",
+              "  pm.expect(json.report).to.be.a('string').and.not.empty;",
+              "});",
+              "",
+              "pm.test(\"Selected rules count >= 0\", function () {",
+              "  var json = pm.response.json();",
+              "  pm.expect(json.selected_count).to.be.at.least(0);",
+              "});",
+              "",
+              "pm.test(\"Debug matches present (since debug=true)\", function () {",
+              "  var json = pm.response.json();",
+              "  pm.expect(json).to.have.property('matches');",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Report (simple)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"size_m2\": 45,\n  \"seats\": 25,\n  \"features_text\": \"ללא אלכוהול, קפה וקינוחים בלבד\",\n  \"top_n_rules\": 40,\n  \"debug\": false\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/report",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "report"
+          ]
+        },
+        "description": "Generates a concise report without debug section."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is 200\", function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Has report text\", function () {",
+              "  var json = pm.response.json();",
+              "  pm.expect(json.report).to.be.a('string').and.not.empty;",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Report (large venue, alcohol)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"size_m2\": 350,\n  \"seats\": 220,\n  \"features_text\": \"הגשת משקאות משכרים, אירועים, מוזיקה רועשת\",\n  \"top_n_rules\": 80,\n  \"debug\": true\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/report",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "report"
+          ]
+        },
+        "description": "Large place with alcohol; useful to check numeric filters (area/seats) + semantic features."
+      }
+    }
+  ]
+}

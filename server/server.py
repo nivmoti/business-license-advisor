@@ -1,337 +1,433 @@
-# server.py
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# server/server.py
+
 from __future__ import annotations
-import os, json, re, math
+import os
+import re
+import json
 from pathlib import Path
-from typing import List, Dict, Any, Optional
-from dataclasses import dataclass
+from typing import List, Dict, Any, Optional, Set, Tuple
+
 import numpy as np
-
-from fastapi import FastAPI, Body
+from sklearn.preprocessing import normalize
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-from rapidfuzz import fuzz
 from openai import OpenAI
+from fastapi.middleware.cors import CORSMiddleware
 
-# ============== קונפיג ==============
-OPENAI_MODEL_EMB = os.getenv("EMB_MODEL", "text-embedding-3-large")
-OPENAI_MODEL_CHAT = os.getenv("CHAT_MODEL", "gpt-4o-mini")
-RULES_PATH = Path(os.getenv("RULES_PATH", "data/curated/rules_flat.json"))
-TAXO_PATH  = Path(os.getenv("TAXO_PATH",  "data/features_taxonomy.json"))
 
-# ספים/משקלים
-SIM_THRESHOLD_ACCEPT = float(os.getenv("SIM_THRESHOLD_ACCEPT", "0.82"))
-SIM_THRESHOLD_SUGGEST = float(os.getenv("SIM_THRESHOLD_SUGGEST", "0.65"))
-KEYWORD_BOOST = float(os.getenv("KEYWORD_BOOST", "0.10"))
-POS_FEATURE_BOOST = float(os.getenv("POS_FEATURE_BOOST", "0.30"))
-NEG_FEATURE_PENALTY = float(os.getenv("NEG_FEATURE_PENALTY", "0.20"))
-MAX_RULES_TO_SUMMARIZE = int(os.getenv("MAX_RULES_TO_SUMMARIZE", "60"))
+# ---------- נתיבים וקונפיג ----------
+ROOT = Path(__file__).resolve().parents[1]
+RULES_PATH = ROOT / "data" / "curated" / "rules_flat.json"
+INDEX_DIR = ROOT / "data" / "index"
+TERMS_PATH = ROOT / "data" / "index" / "terms.json"  # מיפוי term -> rule_ids (לא חובה, אך מועיל)
 
-NEGATION_WORDS = ["ללא", "בלי", "אסור", "אין", "לא"]
+EMBED_MODEL = "text-embedding-3-small"
+CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")  # אפשר לשנות ב־env
 
-client = OpenAI()
+# ---------- מצב גלובלי ----------
+RULES: List[Dict[str, Any]] = []
+TERMS: List[Dict[str, Any]] = []          # מהאינדקס הסמנטי data/index/terms.json (רשימת אובייקטים עם term, rule_ids)
+TERM2IDX: Dict[str, int] = {}             # term -> row in X
+X: Optional[np.ndarray] = None            # מטריצת אמבדינג של ה־terms
+EMBED_CLIENT: Optional[OpenAI] = None
+CHAT_CLIENT: Optional[OpenAI] = None
 
-# ============== מודלים/DTOs ==============
-class FeatureTaxoItem(BaseModel):
-    id: str
-    label_he: str
-    synonyms_he: List[str] = Field(default_factory=list)
+# ממפה מונחי פיצ'רים (עברית/אנגלית) לקנוני אחיד
+FEATURE_SYNONYMS: Dict[str, str] = {
+    # English canonical set
+    "alcohol": "alcohol",
+    "cctv": "cctv",
+    "delivery": "delivery",
+    "frying": "frying",
+    "serves_meat": "serves_meat",
+    "uses_gas": "uses_gas",
+    "water": "water",
+    "sewage": "sewage",
+    "smoking_sign": "smoking_sign",
+    "food_hot": "food_hot",
+    "food_cold": "food_cold",
 
-class ResolveRequest(BaseModel):
-    text: str
+    # Hebrew → canonical
+    "אלכוהול": "alcohol",
+    "משקאות משכרים": "alcohol",
+    "מצלמות אבטחה": "cctv",
+    "מצלמות": "cctv",
+    "משלוחים": "delivery",
+    "שליחויות": "delivery",
+    "טיגון": "frying",
+    "צ׳יפס": "frying",
+    "צ'יפס": "frying",
+    "בשר": "serves_meat",
+    "מגישה בשר": "serves_meat",
+    "גז": "uses_gas",
+    "בלוני גז": "uses_gas",
+    "מים": "water",
+    "ביוב": "sewage",
+    "שפכים": "sewage",
+    "שלטי עישון": "smoking_sign",
+    "עישון": "smoking_sign",
+    "מזון חם": "food_hot",
+    "מזון קר": "food_cold",
+}
 
-class ResolvedFeature(BaseModel):
-    id: str
-    label_he: str
-    score: float
-    polarity: str  # "positive"|"negative"
-    evidence: List[str] = Field(default_factory=list)
+# מילות שלילה בסיסיות (חלון מילים קצר סביב הפיצ׳ר)
+NEGATION_TOKENS: Set[str] = {"ללא", "אין", "לא", "בלי", "אסור"}
 
-class ResolveResponse(BaseModel):
-    resolved: List[ResolvedFeature]
-    suggested: List[ResolvedFeature]
-    unresolved: List[str] = Field(default_factory=list)
+# ---------- FastAPI ----------
+app = FastAPI(title="Business License Advisor API", version="0.2.0")
 
-class MatchRequest(BaseModel):
-    area_m2: Optional[float] = None
-    seats: Optional[int] = None
-    features_text: str
-    language: str = "he"
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # לפיתוח. לפרודקשן הגבל דומיינים
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-class Rule(BaseModel):
-    id: str
-    number: str
-    title: str
-    category: str
-    text: str
-    features: List[str] = Field(default_factory=list)
-    citations: List[Dict[str, int]] = Field(default_factory=list)
-    conditions: Dict[str, Any] = Field(default_factory=dict)
+# ---------- מודלים ל־Pydantic ----------
+class ReportRequest(BaseModel):
+    size_m2: float = Field(0, description="Business area in m^2")
+    seats: int = Field(0, description="Seating/occupancy")
+    features_text: str = Field("", description="Free-text features (Hebrew)")
+    top_n_rules: int = Field(60, description="Max number of rules for the LLM")
+    debug: bool = Field(False, description="Return debug info in response")
 
-class MatchResponse(BaseModel):
-    selected_rule_ids: List[str]
-    llm_report: str
-    debug: Dict[str, Any]
+class ReportResponse(BaseModel):
+    selected_count: int
+    matches: List[Dict[str, Any]] = []
+    sample_rules: List[Dict[str, Any]] = []
+    report: str
+    debug_info: Optional[Dict[str, Any]] = Field(default=None)
 
-# ============== עזר: נרמול עברית ==============
-HEB_PUNCT_RE = re.compile(r"[^\w\s׳״\"'\-–—/:()]+", re.UNICODE)
-SPACES_RE = re.compile(r"\s+")
+# ---------- עזר ----------
+ID_TRAILING_UNDER_RX = re.compile(r"_+$")
 
-def normalize_hebrew(s: str) -> str:
-    s = s.replace("•", " ").replace("·", " ").replace("\u200f", " ")
-    s = s.replace("־", "-")  # מקף עברי
-    s = HEB_PUNCT_RE.sub(" ", s)
-    s = SPACES_RE.sub(" ", s).strip()
-    return s
+def normalize_rule_id(rid: str | None) -> str:
+    """מסיר קווים תחתונים מסוף המזהה כדי לנרמל התאמות (r_3_6_1_ → r_3_6_1)."""
+    if not rid:
+        return ""
+    return ID_TRAILING_UNDER_RX.sub("", rid.strip())
 
-def has_negation_near(term: str, text: str, window: int = 18) -> bool:
-    # חיפוש שלילה קרובה: "ללא<עד ח׳ רווחים>אלכוהול"
-    for neg in NEGATION_WORDS:
-        pattern = rf"{neg}\s+(?:\S+\s+){{0,{max(1, window//6)}}}?{re.escape(term)}"
-        if re.search(pattern, text):
-            return True
-    return False
+def _normalize_he(txt: str) -> str:
+    """נרמול פשוט לעברית: החלפת גרשיים, הורדת תווים לא־אותיים, רווחים מיותרים, לאוור־קייס."""
+    txt = txt.replace("״", '"').replace("”", '"').replace("„", '"').replace("’", "'")
+    txt = re.sub(r"[^\w\u0590-\u05FF\s\'\"]", " ", txt)
+    txt = re.sub(r"\s+", " ", txt).strip()
+    return txt.lower()
 
-# ============== טעינת כללים + טקסונומיה ==============
-def load_rules(path: Path) -> List[Rule]:
+def load_rules(path: Path) -> List[Dict[str, Any]]:
+    if not path.exists():
+        raise FileNotFoundError(f"Missing rules file: {path}")
     data = json.loads(path.read_text(encoding="utf-8"))
-    return [Rule(**r) for r in data]
+    if not isinstance(data, list):
+        raise ValueError("rules_flat.json must be a JSON array")
+    # נרמול מזהים
+    for r in data:
+        if "id" in r and r["id"]:
+            r["id"] = normalize_rule_id(r["id"])
+    return data
 
-def build_taxonomy(rules: List[Rule]) -> List[FeatureTaxoItem]:
-    if TAXO_PATH.exists():
-        return [FeatureTaxoItem(**x) for x in json.loads(TAXO_PATH.read_text(encoding="utf-8"))]
-    # גזירת טקסונומיה בסיסית מהחוקים (fallback)
-    seen = {}
-    for r in rules:
-        for f in r.features:
-            if f not in seen:
-                seen[f] = FeatureTaxoItem(id=f, label_he=f, synonyms_he=[f])
-    return list(seen.values())
+def load_terms_map(path: Path) -> Dict[str, Set[str]]:
+    """
+    קורא את data/curated/terms.json (אם קיים): [{term, rule_ids, count}, ...]
+    ומחזיר מיפוי term -> set(rule_id) כשהמזהים מנורמלים.
+    """
+    if not path.exists():
+        return {}
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    out: Dict[str, Set[str]] = {}
+    for item in raw:
+        term = item.get("term", "")
+        rids = {normalize_rule_id(x) for x in item.get("rule_ids", [])}
+        if term:
+            out[term] = rids
+    return out
 
-# ============== אינדקס Embeddings ==============
-@dataclass
-class SurfaceVec:
-    feature_id: str
-    surface: str
-    vec: np.ndarray
+def get_condition_bounds(r: Dict[str, Any]) -> Tuple[Optional[float], Optional[float], Optional[int], Optional[int]]:
+    c = r.get("conditions") or {}
+    return (
+        c.get("min_area_m2"), c.get("max_area_m2"),
+        c.get("min_seats"), c.get("max_seats")
+    )
 
-class EmbIndex:
-    def __init__(self):
-        self.items: List[SurfaceVec] = []
-        self._mat: Optional[np.ndarray] = None
+def rule_matches_numeric(r: Dict[str, Any], size_m2: float, seats: int) -> bool:
+    min_a, max_a, min_s, max_s = get_condition_bounds(r)
+    ok_area = True
+    ok_seats = True
+    if min_a is not None and size_m2 < float(min_a): ok_area = False
+    if max_a is not None and size_m2 > float(max_a): ok_area = False
+    if min_s is not None and seats   < int(min_s):   ok_seats = False
+    if max_s is not None and seats   > int(max_s):   ok_seats = False
+    return ok_area and ok_seats
 
-    def build(self, taxo: List[FeatureTaxoItem]):
-        surfaces = []
-        meta: List[tuple[str,str]] = []
-        for t in taxo:
-            candidates = [t.label_he] + list(t.synonyms_he)
-            for s in candidates:
-                s_norm = normalize_hebrew(s)
-                if not s_norm:
-                    continue
-                surfaces.append(s_norm)
-                meta.append((t.id, s))
-        if not surfaces:
-            self._mat = np.zeros((0, 1536), dtype=np.float32)
-            return
+def filter_rules_by_numeric(rules: List[Dict[str, Any]], size_m2: float, seats: int) -> List[Dict[str, Any]]:
+    return [r for r in rules if rule_matches_numeric(r, size_m2, seats)]
 
-        embs = client.embeddings.create(model=OPENAI_MODEL_EMB, input=surfaces).data
-        vecs = [np.array(e.embedding, dtype=np.float32) for e in embs]
-        self.items = [SurfaceVec(feature_id=mid, surface=surf, vec=v) for (mid, surf), v in zip(meta, vecs)]
-        self._mat = np.vstack([it.vec for it in self.items]) if self.items else np.zeros((0, len(vecs[0])), dtype=np.float32)
+def detect_negations(text: str) -> Set[str]:
+    """
+    מאתר מאפיינים שמופיעים עם מילת שלילה בחלון קצר לפני המונח.
+    לדוגמה: 'אין אלכוהול', 'בלי גז', 'ללא טיגון'.
+    מחזיר סט של שמות קנוניים שנשללו.
+    """
+    t = _normalize_he(text)
+    tokens = t.split()
+    negated: Set[str] = set()
+    window_before = 3
 
-    def similarity(self, query_vec: np.ndarray) -> np.ndarray:
-        if self._mat is None or self._mat.size == 0:
-            return np.zeros((0,), dtype=np.float32)
-        # cosine
-        a = self._mat
-        denom = (np.linalg.norm(a, axis=1) * np.linalg.norm(query_vec) + 1e-8)
-        return (a @ query_vec) / denom
+    # בנה רשימה של ווריאנטים מנורמלים → קנוני (שימושי לטוקניזציה)
+    syn_norm = { _normalize_he(k): v for k, v in FEATURE_SYNONYMS.items() }
 
-# ============== פירוק טקסט משתמש למאפיינים ==============
-def resolve_features_free_text(taxo: List[FeatureTaxoItem], emb_index: EmbIndex, text: str) -> ResolveResponse:
-    base_text = normalize_hebrew(text)
-    if not base_text:
-        return ResolveResponse(resolved=[], suggested=[], unresolved=[])
+    for i, tok in enumerate(tokens):
+        # אם הטוקן הוא אחד הווריאנטים – בדוק חלון לפניו
+        if tok in syn_norm:
+            canon = syn_norm[tok]
+            start = max(0, i - window_before)
+            if any(n in tokens[start:i] for n in NEGATION_TOKENS):
+                negated.add(canon)
+    return negated
 
-    # 1) אמבדינג לטקסט כולו
-    q_emb = client.embeddings.create(model=OPENAI_MODEL_EMB, input=[base_text]).data[0].embedding
-    q_vec = np.array(q_emb, dtype=np.float32)
-    sims = emb_index.similarity(q_vec)
+def resolve_features(text: str) -> Dict[str, Any]:
+    """
+    מזהה מאפיינים לפי מילון סינונים (עברית/אנגלית) ומחזיר:
+      resolved: [{input, canonical, via}]
+      negative: [canonical,...] — מאפיינים שנשללו מהטקסט
+    """
+    t = _normalize_he(text)
+    resolved = []
+    seen = set()
 
-    # 2) איתור מילות מפתח / נרדפים (עם fuzzy קטן)
-    def keyword_signal(surface: str, text: str) -> float:
-        s = surface.strip()
-        if not s:
-            return 0.0
-        if s in text:
-            return 1.0
-        # fuzzy boost קטן (נניח מ-92 ומעלה)
-        if fuzz.partial_ratio(s, text) >= 92:
-            return 0.6
-        return 0.0
+    # התאמה לפי מילון
+    for variant, canon in FEATURE_SYNONYMS.items():
+        v = _normalize_he(variant)
+        if v and v in t and (variant, canon) not in seen:
+            resolved.append({"input": variant, "canonical": canon, "via": "synonym"})
+            seen.add((variant, canon))
 
-    # 3) אגרגציה לפי feature
-    agg: Dict[str, Dict[str, Any]] = {}
-    for idx, it in enumerate(emb_index.items):
-        emb_score = float(sims[idx])
-        key_score = keyword_signal(normalize_hebrew(it.surface), base_text)
-        score = max(emb_score, min(1.0, emb_score + (KEYWORD_BOOST if key_score > 0 else 0.0)))
-        neg = has_negation_near(normalize_hebrew(it.surface), base_text)
-        if it.feature_id not in agg or score > agg[it.feature_id]["score"]:
-            agg[it.feature_id] = {"score": score, "label_he": it.surface, "neg": neg, "evidence": [it.surface]}
+    # התאמה "ישירה" על פי טוקנים – לא הכרחי אבל לפעמים מועיל
+    for raw in re.split(r"[,\s]+", t):
+        raw = raw.strip()
+        if not raw:
+            continue
+        if raw in FEATURE_SYNONYMS:
+            canon = FEATURE_SYNONYMS[raw]
+            if (raw, canon) not in seen:
+                resolved.append({"input": raw, "canonical": canon, "via": "exact"})
+                seen.add((raw, canon))
 
-    resolved: List[ResolvedFeature] = []
-    suggested: List[ResolvedFeature] = []
-    for fid, item in agg.items():
-        label = next((t.label_he for t in taxo if t.id == fid), fid)
-        rf = ResolvedFeature(
-            id=fid,
-            label_he=label,
-            score=round(item["score"], 4),
-            polarity="negative" if item["neg"] else "positive",
-            evidence=list(set(item["evidence"]))
-        )
-        if rf.score >= SIM_THRESHOLD_ACCEPT:
-            resolved.append(rf)
-        elif rf.score >= SIM_THRESHOLD_SUGGEST:
-            suggested.append(rf)
+    negative = list(detect_negations(text))
+    return {"resolved": resolved, "negative": negative}
 
-    return ResolveResponse(resolved=sorted(resolved, key=lambda x: -x.score),
-                           suggested=sorted(suggested, key=lambda x: -x.score),
-                           unresolved=[])
+# ---------- אמבדינג/התאמה סמנטית ----------
+def embed_query(client: OpenAI, text: str) -> Optional[np.ndarray]:
+    text = (text or "").strip()
+    if not text:
+        return None
+    resp = client.embeddings.create(model=EMBED_MODEL, input=[text])
+    v = np.array(resp.data[0].embedding, dtype=np.float32).reshape(1, -1)
+    return normalize(v)
 
-# ============== סינון חוקים + דירוג ==============
-def rule_passes_bounds(rule: Rule, area_m2: Optional[float], seats: Optional[int]) -> bool:
-    cond = rule.conditions or {}
-    # מרחב: אם יש מינימום/מקסימום – נבדוק; אם None – לא מגבילים.
-    min_area = cond.get("min_area_m2")
-    max_area = cond.get("max_area_m2")
-    min_seats = cond.get("min_seats")
-    max_seats = cond.get("max_seats")
+def semantic_match_features(text: str, top_k: int = 10, min_sim: float = 0.73):
+    """
+    התאמה סמנטית של טקסט חופשי ל־terms (אם נבנה אינדקס ב־data/index).
+    מחזיר:
+      {"matches": [{"term","score","rule_ids"}, ...], "rule_ids": set([...])}
+    """
+    if X is None or EMBED_CLIENT is None or not TERMS:
+        return {"matches": [], "rule_ids": set()}
+    v = embed_query(EMBED_CLIENT, text)
+    if v is None:
+        return {"matches": [], "rule_ids": set()}
+    scores = (X @ v.T).ravel()
+    idxs = np.argsort(-scores)[:top_k]
+    out = []
+    acc: Set[str] = set()
+    for i in idxs:
+        s = float(scores[int(i)])
+        if s < min_sim:
+            continue
+        t = TERMS[int(i)]
+        # נרמול מזהים בצד ה־terms למקרה שטרם נוקו
+        rule_ids = [normalize_rule_id(x) for x in t.get("rule_ids", [])]
+        out.append({"term": t["term"], "score": s, "rule_ids": rule_ids})
+        acc.update(rule_ids)
+    return {"matches": out, "rule_ids": acc}
 
-    if area_m2 is not None:
-        if min_area is not None and area_m2 < float(min_area): return False
-        if max_area is not None and area_m2 > float(max_area): return False
+# ---------- בחירת כללים לדוח ----------
+def select_rules_for_report(payload: ReportRequest) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+    """
+    1) סינון נומרי לפי שטח/תפוסה
+    2) מיצוי מאפיינים: resolved + negative
+    3) חיבור חוקים:
+       - חוקים שעוברים נומרית
+       - עדיפות לחוקים שהגיעו ממאפיינים (terms.json + התאמה סמנטית)
+       - מדלגים על מאפיינים שנשללו (negative)
+    4) דירוג לפי: הופעה במאפיינים, אורך טקסט, ומעט ענישה לכללים כלליים מאוד
+    """
+    # בסיס: תנאים נומריים
+    base = filter_rules_by_numeric(RULES, size_m2=payload.size_m2, seats=payload.seats)
 
-    if seats is not None:
-        if min_seats is not None and seats < int(min_seats): return False
-        if max_seats is not None and seats > int(max_seats): return False
+    # שלב מאפיינים
+    feat = resolve_features(payload.features_text)
+    resolved_canons = [x["canonical"] for x in feat["resolved"]]
+    negative_canons = set(feat["negative"])
 
-    return True
+    # חוקים מ-terms.json הקלאסי (אם קיים)
+    ids_from_terms: Set[str] = set()
+    for canon in resolved_canons:
+        if canon in negative_canons:
+            continue  # אם נשלל — לא לאסוף חוקים ממנו
+        if TERMS_MAP and canon in TERMS_MAP:
+            ids_from_terms |= TERMS_MAP[canon]
 
-def score_rule(rule: Rule, resolved: List[ResolvedFeature]) -> float:
-    score = 1.0  # בסיס
-    feat_set = set(rule.features or [])
-    for rf in resolved:
-        if rf.id in feat_set:
-            if rf.polarity == "positive":
-                score += POS_FEATURE_BOOST
-            else:
-                score -= NEG_FEATURE_PENALTY
-    # משקולת קטנה לאורך טקסט (חוקים ארוכים בדרך כלל מפורטים יותר)
-    score += min(0.2, (len(rule.text) / 1000.0) * 0.05)
-    return score
+    # התאמה סמנטית (אם יש אינדקס)
+    sem = semantic_match_features(payload.features_text)
+    sem_ids = set(sem["rule_ids"])
 
-# ============== יצירת דוח LLM ==============
-def make_report_llm(user: MatchRequest, rules: List[Rule], resolved: List[ResolvedFeature]) -> str:
-    # חותכים אם יותר מדי חוקים
-    rules = rules[:MAX_RULES_TO_SUMMARIZE]
+    # מועמדים: חיתוך עם הבסיס, עם הטיה לטובת מי שמופיע במאפיינים
+    def pick_candidates() -> List[Dict[str, Any]]:
+        prefer_ids = ids_from_terms | sem_ids
+        if prefer_ids:
+            on_sem = [
+                r for r in base
+                if normalize_rule_id(r.get("id") or r.get("number")) in prefer_ids
+            ]
+            return on_sem if on_sem else base
+        return base
 
-    # תמצית קלט
-    features_human = [f"{r.label_he} ({'ללא' if r.polarity=='negative' else 'כן'}) ~{r.score:.2f}" for r in resolved]
-    # מקצרים טקסט לחיסכון בטוקנים
-    def rule_brief(r: Rule) -> Dict[str, Any]:
-        return {
-            "id": r.id,
-            "number": r.number,
-            "category": r.category,
-            "title": r.title[:80],
-            "text": (r.text[:600] + "…") if len(r.text) > 650 else r.text,
-            "citations": r.citations,
-            "features": r.features
-        }
+    candidates = pick_candidates()
 
-    payload = {
-        "user_profile": {
-            "area_m2": user.area_m2,
-            "seats": user.seats,
-            "features": features_human
-        },
-        "rules": [rule_brief(r) for r in rules]
+    # דירוג
+    def score(r: Dict[str, Any]) -> Tuple[float, int, int, float]:
+        rid = normalize_rule_id(r.get("id") or r.get("number", ""))
+        s_from_feat = 1.0 if (rid in ids_from_terms or rid in sem_ids) else 0.0
+        feats_len = len(r.get("features") or [])
+        text_len = len((r.get("text") or ""))
+        generic_penalty = -0.2 if r.get("number", "").count(".") <= 1 else 0.0
+        return (s_from_feat, feats_len, text_len, generic_penalty)
+
+    selected = sorted(candidates, key=score, reverse=True)[:payload.top_n_rules]
+
+    debug_info = {
+        "features_resolved": feat["resolved"],
+        "features_negative": list(negative_canons),
+        "rule_ids_from_terms_count": len(ids_from_terms),
+        "rule_ids_from_terms_preview": list(sorted(ids_from_terms))[:30],
+        "semantic_matches_count": len(sem.get("matches", [])),
+        "semantic_matches": sem.get("matches", [])[:10],
+        "selected_ids_preview": [
+            normalize_rule_id(r.get("id") or r.get("number")) for r in selected[:30]
+        ],
     }
 
-    sys = (
-        "את/ה עוזר/ת רגולטורי/ת בעברית פשוטה. קבל/י רשימת סעיפים רלוונטיים לעסק, "
-        "והפק/י דוח תמציתי ומועיל לבעל העסק. "
-        "הדוח צריך להיות ברור, לפעולה, ומחולק לקטגוריות/עדיפויות. "
-        "אל תמציא/י עובדות. ציין/י מספר סעיף וציטוט קצר רלוונטי, ושמור/י על שפה ידידותית."
+    return selected, debug_info
+
+# ---------- קריאה ל־LLM ----------
+def llm_report(client: OpenAI, model: str, payload: ReportRequest, rules: List[Dict[str, Any]]) -> str:
+    # הקשר קומפקטי — מספר/כותרת/קטגוריה/טקסט קצר
+    def short(r):
+        return {
+            "id": normalize_rule_id(r.get("id") or r.get("number")),
+            "number": r.get("number"),
+            "title": r.get("title") or "",
+            "category": r.get("category") or "",
+            "text": (r.get("text") or "")[:600]
+        }
+
+    rules_ctx = [short(r) for r in rules]
+
+    system = (
+        "You are a helpful assistant that writes plain Hebrew compliance summaries for restaurant licensing.\n"
+        "Use only the provided rules context. Be concise, structured, and clear.\n"
+        "Avoid legalese; explain in business language. Group by category and add actionable next steps."
     )
-    user_msg = (
-        "פרטי העסק ותאימות ראשונית לחוקים מצורפים כ-JSON. "
-        "הפק/י דוח מקוצר: סיכום כללי, דרישות קריטיות (חובה), דרישות מומלצות (רשות), והקלות/פטורים. "
-        "אם יש סעיפי 'הקלה' (למשל 'ללא אלכוהול' עד 200 מקומות) – הדגש/י אותם. "
-        "בסוף כל תת-סעיף, הוסף/י סימוכין בסגנון: [סעיף X.Y.Z, עמ' N].\n\n"
-        f"{json.dumps(payload, ensure_ascii=False)}"
+    user = (
+        "נתוני העסק:\n"
+        f"- גודל: {payload.size_m2} מ\"ר\n"
+        f"- מקומות ישיבה: {payload.seats}\n"
+        f"- מאפיינים חופשיים: {payload.features_text}\n\n"
+        "להלן אוסף כללים רלוונטיים (מספר/כותרת/קטגוריה/טקסט):\n"
+        f"{json.dumps(rules_ctx, ensure_ascii=False, indent=2)}\n\n"
+        "משימה: הפק דו\"ח מותאם אישית בעברית ברורה:\n"
+        "1) סיכום קצר של מצב העסק ביחס לכללים שנמצאו\n"
+        "2) דרישות מחייבות — מחולקות לפי קטגוריות (בריאות/כבאות/משטרה/אחר)\n"
+        "3) המלצות פעולה פרקטיות לפי סדר עדיפויות (מיידי/בינוני/נחמד שיהיה)\n"
+        "4) ציין הפניות (מספר סעיף) היכן שאפשר.\n"
+        "הימנע ממידע שלא נמצא בהקשר שניתן."
     )
 
     resp = client.chat.completions.create(
-        model=OPENAI_MODEL_CHAT,
-        messages=[{"role": "system", "content": sys},
-                  {"role": "user", "content": user_msg}],
-        temperature=0.2
+        model=model,
+        messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
+        temperature=0.2,
     )
-    return resp.choices[0].message.content.strip()
+    return (resp.choices[0].message.content or "").strip()
 
-# ============== FastAPI App ==============
-app = FastAPI(title="Business License Advisor API", version="0.1.0")
-
-# מצב זיכרון
-RULES: List[Rule] = []
-TAXO: List[FeatureTaxoItem] = []
-EMB_INDEX = EmbIndex()
-
-@app.on_event("startup")
-def _startup():
-    global RULES, TAXO, EMB_INDEX
-    RULES = load_rules(RULES_PATH)
-    TAXO = build_taxonomy(RULES)
-    EMB_INDEX.build(TAXO)
-    print(f"[startup] rules={len(RULES)} ; features={len(TAXO)} ; surfaces={len(EMB_INDEX.items)}")
-
+# ---------- מסלולים ----------
 @app.get("/health")
 def health():
-    return {"ok": True, "rules": len(RULES), "features": len(TAXO)}
+    ok_index = (INDEX_DIR / "terms.json").exists() and (INDEX_DIR / "embeddings.npz").exists()
+    return {"ok": True, "rules_loaded": len(RULES), "feature_index": ok_index}
 
-@app.post("/features/resolve", response_model=ResolveResponse)
-def resolve_endpoint(payload: ResolveRequest):
-    return resolve_features_free_text(TAXO, EMB_INDEX, payload.text)
+@app.post("/report", response_model=ReportResponse)
+def report(req: ReportRequest):
+    if not RULES:
+        raise HTTPException(status_code=500, detail="rules_flat.json not loaded")
+    if CHAT_CLIENT is None:
+        raise HTTPException(status_code=500, detail="OpenAI client not configured (OPENAI_API_KEY)")
 
-@app.post("/match", response_model=MatchResponse)
-def match_endpoint(req: MatchRequest):
-    # 1) נרמול מאפיינים
-    resolved_resp = resolve_features_free_text(TAXO, EMB_INDEX, req.features_text)
-    resolved = resolved_resp.resolved  # אפשר לצרף גם suggested אם תרצה
+    selected, debug_info = select_rules_for_report(req)
+    report_text = llm_report(CHAT_CLIENT, CHAT_MODEL, req, selected)
 
-    # 2) סינון לפי תחום גודל/תפוסה
-    filtered = [r for r in RULES if rule_passes_bounds(r, req.area_m2, req.seats)]
+    sample = [{"id": normalize_rule_id(r.get("id") or r.get("number")),
+               "number": r.get("number"),
+               "title": r.get("title")} for r in selected[:10]]
 
-    # 3) דירוג לפי בוסט מאפיינים + עוד
-    scored = [(r, score_rule(r, resolved)) for r in filtered]
-    scored.sort(key=lambda x: -x[1])
-
-    selected_rules = [r for r, s in scored if s > 0.5][:MAX_RULES_TO_SUMMARIZE]
-
-    # 4) דוח LLM
-    report = make_report_llm(req, selected_rules, resolved)
-
-    debug = {
-        "resolved_features": [rf.model_dump() for rf in resolved],
-        "filtered_count": len(filtered),
-        "selected_count": len(selected_rules),
-        "top5": [{"id": r.id, "score": s} for r, s in scored[:5]]
-    }
-
-    return MatchResponse(
-        selected_rule_ids=[r.id for r in selected_rules],
-        llm_report=report,
-        debug=debug
+    return ReportResponse(
+        selected_count=len(selected),
+        matches=debug_info["semantic_matches"] if req.debug else [],
+        sample_rules=sample,
+        report=report_text,
+        debug_info=debug_info if req.debug else None
     )
+
+# ---------- אתחול ----------
+TERMS_MAP: Dict[str, Set[str]] = {}  # term (כמו "alcohol") -> set(rule_id)
+
+@app.on_event("startup")
+def on_startup():
+    global RULES, TERMS, TERM2IDX, X, EMBED_CLIENT, CHAT_CLIENT, TERMS_MAP
+
+    # rules
+    RULES = load_rules(RULES_PATH)
+    print(f"[startup] loaded {len(RULES)} rules from {RULES_PATH}")
+
+    # terms map (לא חובה אך מוסיף recall גבוה במאפיינים)
+    TERMS_MAP = load_terms_map(TERMS_PATH)
+    print(f"[startup] loaded {len(TERMS_MAP)} canonical terms from {TERMS_PATH}")
+
+    # OpenAI client
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        print("[startup] WARNING: OPENAI_API_KEY not set — LLM/embeddings disabled")
+    else:
+        EMBED_CLIENT = OpenAI(api_key=api_key)
+        CHAT_CLIENT  = EMBED_CLIENT
+
+    # feature index (סמנטי)
+    tpath = INDEX_DIR / "terms.json"
+    epath = INDEX_DIR / "embeddings.npz"
+    if tpath.exists() and epath.exists():
+        TERMS = json.loads(tpath.read_text(encoding="utf-8"))
+        # נרמול מזהים גם בצד הזה ליתר ביטחון
+        for t in TERMS:
+            t["rule_ids"] = [normalize_rule_id(x) for x in t.get("rule_ids", [])]
+
+        data = np.load(epath)
+        X = data["X"].astype(np.float32)
+        X = normalize(X)
+        TERM2IDX = {t["term"]: i for i, t in enumerate(TERMS)}
+        print(f"[startup] feature index loaded: {len(TERMS)} terms, X={X.shape}")
+    else:
+        print("[startup] feature index not found — run scripts/build_feature_index.py first")

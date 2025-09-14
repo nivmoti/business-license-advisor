@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BLA — Business License Advisor</title>
+    <style>
+      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji"; margin: 0; background:#fafafa; color:#111; }
+      .container { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+      .card { background:#fff; border:1px solid #e5e5e5; border-radius:12px; padding:16px; box-shadow: 0 1px 2px rgba(0,0,0,.03); }
+      .row { display:flex; gap:16px; flex-wrap:wrap; }
+      .col { flex:1 1 300px; }
+      label { display:block; font-size:14px; margin-bottom:6px; color:#333; }
+      input, textarea, select { width:100%; padding:10px; border:1px solid #dcdcdc; border-radius:8px; font-size:15px; background:#fff; }
+      textarea { min-height: 96px; resize: vertical; }
+      button { background:#111; color:#fff; border:none; padding:10px 16px; border-radius:8px; font-size:15px; cursor:pointer; }
+      button:disabled { opacity:.6; cursor:not-allowed; }
+      .muted { color:#666; font-size: 13px; }
+      .badge { display:inline-block; padding:2px 8px; border-radius:999px; background:#f1f1f1; font-size:12px; margin-inline-start:6px;}
+      .list { list-style: none; padding:0; margin:0; }
+      .list li { padding:6px 0; border-bottom:1px dashed #eee; }
+      pre { background:#f6f8fa; border:1px solid #eee; padding:12px; border-radius:8px; overflow:auto; }
+      .markdown h3 { margin-top: 1.5em; }
+      .markdown ul { padding-inline-start: 20px; }
+      .hr { height:1px; background:#eee; margin:16px 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
