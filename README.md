@@ -150,6 +150,91 @@ for test the API you can use Postman and import the Json file from "test".
 
 ---
 
+## System Architecture
+### Overview Diagram
+flowchart TB
+    subgraph Preprocessing[Preprocessing Stage]
+        PDF[📄 Regulatory PDF] --> DB[⚙️ Data Builder Script]
+        DB -->|LLM calls| OpenAI[🤖 OpenAI API]
+        OpenAI --> DB
+        DB --> Rules[rules_flat.json]
+        DB --> Terms[terms.json]
+        DB --> Emb[embeddings.npz]
+    end
+
+    subgraph Runtime[Runtime System]
+        U[👤 User / Business Owner] -->|fills form| UI[💻 React Frontend]
+        UI -->|POST /report| API[🚀 FastAPI Server]
+        API --> Rules
+        API --> Terms
+        API --> Emb
+        API -->|rules + features| OpenAI
+        OpenAI --> API
+        API -->|personalized report| UI
+        UI --> U
+    end
+
+Components
+
+Data Builder (Preprocessing)
+
+Script (data_builder_langchain.py) processes the regulatory PDF.
+
+Splits PDF into page windows and sends them to OpenAI API with a parsing prompt.
+
+The API returns structured JSON snippets with numbered rules, conditions, and features.
+
+The script merges these snippets into:
+
+rules_flat.json → flat list of all rules.
+
+terms.json → canonical feature terms mapped to rule IDs.
+
+embeddings.npz → semantic vector index for fuzzy feature search.
+
+React Frontend (UI)
+
+Collects user inputs (size, seats, free-text features).
+
+Sends them to the backend (/report).
+
+Displays a clear compliance report.
+
+FastAPI Server (Backend)
+
+Loads rules_flat.json, terms.json, and embeddings.npz at startup.
+
+Endpoints:
+
+/health: verify rules/index are available.
+
+/report: generate compliance report.
+
+Logic:
+
+Numeric filtering (area, seats).
+
+Feature resolution (synonyms, negations, embeddings).
+
+Selects matching rules.
+
+Calls OpenAI LLM to generate the final natural-language report.
+
+Data Layer
+
+Holds curated rules (rules_flat.json) and feature indices (terms.json, embeddings.npz).
+
+Built once during preprocessing, reused in runtime.
+
+OpenAI API
+
+Preprocessing: receives PDF text windows from the Data Builder, returns structured JSON.
+
+Runtime: receives filtered rules and user info, returns a clear Hebrew compliance summary.
+
+---
+
+
 ## 🧠 AI Usage & Key Prompts
 
 This project was fully developed using ChatGPT (GPT-5) and the OpenAI API, both for data preparation and for building the application logic.
