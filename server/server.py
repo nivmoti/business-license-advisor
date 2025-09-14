@@ -165,28 +165,44 @@ def rule_matches_numeric(r: Dict[str, Any], size_m2: float, seats: int) -> bool:
 def filter_rules_by_numeric(rules: List[Dict[str, Any]], size_m2: float, seats: int) -> List[Dict[str, Any]]:
     return [r for r in rules if rule_matches_numeric(r, size_m2, seats)]
 
+# החלף את detect_negations הקיים בזה:
+
+PUNCT_RX = re.compile(r"[,\.\;\:\)\]\}\n]")  # סוף פסוקית: פסיק/נקודה/נקודה-פסיק/ירידת שורה וכו'
+NEG_WORDS_RX = re.compile(r"\b(ללא|אין|לא|בלי|אסור)\b")
+
 def detect_negations(text: str) -> Set[str]:
     """
-    מאתר מאפיינים שמופיעים עם מילת שלילה בחלון קצר לפני המונח.
-    לדוגמה: 'אין אלכוהול', 'בלי גז', 'ללא טיגון'.
-    מחזיר סט של שמות קנוניים שנשללו.
+    מזהה פיצ'רים שנשללו בתוך אותה פסוקית:
+    דוגמה: 'אין עישון, מצלמות אבטחה' → רק 'smoking_sign' נשלל (הפסיק חותך את הפסוקית).
     """
-    t = _normalize_he(text)
-    tokens = t.split()
     negated: Set[str] = set()
-    window_before = 3
+    if not text:
+        return negated
 
-    # בנה רשימה של ווריאנטים מנורמלים → קנוני (שימושי לטוקניזציה)
+    t_norm = _normalize_he(text)
+
+    # מפה של וריאנט מנורמל → קנוני
     syn_norm = { _normalize_he(k): v for k, v in FEATURE_SYNONYMS.items() }
 
-    for i, tok in enumerate(tokens):
-        # אם הטוקן הוא אחד הווריאנטים – בדוק חלון לפניו
-        if tok in syn_norm:
-            canon = syn_norm[tok]
-            start = max(0, i - window_before)
-            if any(n in tokens[start:i] for n in NEGATION_TOKENS):
+    # נחפש הופעות של מילות שלילה בטקסט המקורי (לא המנורמל) כדי לקבל אינדקסים מדויקים
+    # אבל נבדוק פיצ'רים בתוך חלון הפסוקית גם בגרסה המנורמלת.
+    for m in NEG_WORDS_RX.finditer(text):
+        start = m.end()  # אחרי מילת השלילה
+        # סוף הפסוקית: הפסיק/נקודה/סימן פיסוק/ירידת שורה הקרוב הבא
+        end_match = PUNCT_RX.search(text, start)
+        end = end_match.start() if end_match else len(text)
+
+        clause_raw = text[start:end]
+        clause = _normalize_he(clause_raw)
+
+        # כל וריאנט שמופיע בתוך הפסוקית – נחשב כ"נשלל"
+        for variant, canon in FEATURE_SYNONYMS.items():
+            v = _normalize_he(variant)
+            if v and v in clause:
                 negated.add(canon)
+
     return negated
+
 
 def resolve_features(text: str) -> Dict[str, Any]:
     """
